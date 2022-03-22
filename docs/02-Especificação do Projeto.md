@@ -10,32 +10,38 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 As entrevistas foram feitas e as histórias contadas estão abaixo:
 
-| ![foto 1](img/img01.png) | **JOSÉ LUIZ FERREIRA** ||
+| ![foto 1](img/img01.png) | **RAFAEL** ||
 |:---:|:---:|:---:|
 ||||
 | **Idade:** | **Ocupação:** | **Aplicativos:** |
-| 45 anos | Arquiteto e Fotógrafo | Instagram; Photoshop; Linkedin |
+| 27 anos | Personal Trainer | Google Agenda; Nike Run Club; Funções de clima nativos |
 ||||
 | **Motivações:** | **Frustrações:** | **Hobbies, História:** |
-| Melhorar o atendimento aos clientes; Centralizar informações de seus clientes. | Dificuldade em gerir seu banco de dados de clientes. | Formado em arquitetura, atualmente trabalhando como fotógrafo profissional. |
+| Poder ter uma forma fácil de mostrar meus agendamentos, e saber como o dia vai estar. | Sempre que marco um horário com um aluno, fico preocupado de como vai estar o tempo, especificamente se o treino for em um local aberto. | Gosto de trabalhar com pessoas.
+Ser bem organizado.
+Treinar ao ar livre. |
 
-| ![foto 2](img/img02.png) | **MARÍLIA SANTOS** ||
+| ![foto 2](img/img02.png) | **RODRIGO** ||
 |:---:|:---:|:---:|
 ||||
 | **Idade:** | **Ocupação:** | **Aplicativos:** |
-| 35 anos | Esteticista | Instagram; Photoshop; Spotify |
+| 32 anos | Empresário | Linkedin; Twitter; Google Drive |
 ||||
 | **Motivações:** | **Frustrações:** | **Hobbies, História:** |
-| Criar carteira de clientes; Cadastrar clientes para gerar promoções. | Não saber o público alvo de seu negócio; Manter seus clientes. | Marília tem dificuldade em manter seus clientes antigos. |
+| Conseguir armazenar suas informações não críticas, em um único lugar, que seja de fácil acesso e seja acessado com poucos cliques | Nos dias mais movimentados em seu cotidiano costuma esquecer documentos ou itens relacionados com reuniões marcadas em sua empresa. | Ser bem organizado.
+Nunca se atrasar.
+Ter controle sobre suas informações |
 
-| ![foto 3](img/img03.png) | **THIAGO SOUTO** ||
+| ![foto 3](img/img03.png) | **MICHELE** ||
 |:---:|:---:|:---:|
 ||||
 | **Idade:** | **Ocupação:** | **Aplicativos:** |
-| 35 anos | Contador | Instagram; Telegram; PicPay |
+| 29 anos | Guia Turistica | Pinterest; Instagram; Google Maps |
 ||||
 | **Motivações:** | **Frustrações:** | **Hobbies, História:** |
-| Melhorar o atendimento aos clientes; Encontrar novos clientes. | Dificuldade em encontrar Clientes. | Thiago acabou de se formar como contador e precisa de clientes novos. |
+| Sempre tentar trazer a melhor experiência para os seus clientes em suas viagens. | Quando ela marca algo com um grupo de turistas, ela sempre fica com medo de como vai estar o tempo, porque é sempre bom avisar com antecedência se a viagem terá que ser adiada, pois como são muitas viagens que ela realiza, nunca se lembra de olhar como vai estar o dia. | Ensinar história.
+Alegrar seus clientes
+Viajar. |
 
 ## Histórias de Usuários
 

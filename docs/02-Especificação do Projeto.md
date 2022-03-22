@@ -8,19 +8,34 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+As entrevistas foram feitas e as histórias contadas estão abaixo:
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+| ![foto 1](IMG01.png) | **JOSÉ LUIZ FERREIRA** ||
+|:---:|:---:|:---:|
+||||
+| **Idade:** | **Ocupação:** | **Aplicativos:** |
+| 45 anos | Arquiteto e Fotógrafo | Instagram; Photoshop; Linkedin |
+||||
+| **Motivações:** | **Frustrações:** | **Hobbies, História:** |
+| Melhorar o atendimento aos clientes; Centralizar informações de seus clientes. | Dificuldade em gerir seu banco de dados de clientes. | Formado em arquitetura, atualmente trabalhando como fotógrafo profissional. |
 
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+| ![foto 2](IMG02.png) | **MARÍLIA SANTOS** ||
+|:---:|:---:|:---:|
+||||
+| **Idade:** | **Ocupação:** | **Aplicativos:** |
+| 35 anos | Esteticista | Instagram; Photoshop; Spotify |
+||||
+| **Motivações:** | **Frustrações:** | **Hobbies, História:** |
+| Criar carteira de clientes; Cadastrar clientes para gerar promoções. | Não saber o público alvo de seu negócio; Manter seus clientes. | Marília tem dificuldade em manter seus clientes antigos. |
+
+| ![foto 3](IMG03.png) | **THIAGO SOUTO** ||
+|:---:|:---:|:---:|
+||||
+| **Idade:** | **Ocupação:** | **Aplicativos:** |
+| 35 anos | Contador | Instagram; Telegram; PicPay |
+||||
+| **Motivações:** | **Frustrações:** | **Hobbies, História:** |
+| Melhorar o atendimento aos clientes; Encontrar novos clientes. | Dificuldade em encontrar Clientes. | Thiago acabou de se formar como contador e precisa de clientes novos. |
 
 ## Histórias de Usuários
 

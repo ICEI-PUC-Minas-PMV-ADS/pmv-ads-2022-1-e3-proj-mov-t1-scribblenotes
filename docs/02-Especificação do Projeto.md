@@ -67,15 +67,26 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| A página inicial da aplicação deve possibilitar ao usuário fazer login, se cadastrar ou alterar sua senha; | ALTA | 
+|RF-002| A aplicação deve permitir ao usuário adicionar suas anotações. | ALTA |
+|RF-003| A aplicação deve permitir visualizar o clima em tempo real. | ALTA |
+|RF-004| A aplicação deverá permitir fazer o acompanhamento do local escolhido através de uma API de Geolocalização. | MÉDIA |
+|RF-005| A aplicação deve conter um espaço para o usuário adicionar fotos. | MÉDIA |
+|RF-006| A aplicação deverá permitir ao usuário visualizar seus compromissos na semana ou mês. | ALTA |
+|RF-007| A aplicação deverá ter como itens de menu: Home, agenda, clima, sobre e Contato; | BAIXA |
+|RF-008| A aplicação deve permitir ao usuário visualizar a agenda e o clima. | MÉDIA |
+|RF-009| A aplicação deve permitir ao usuário de agenda apagar suas anotações ou marcar como finalizadas. | ALTA |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-001| UI deve ser compatível com a resolução das telas da maioria dos smartphones | ALTA | 
+|RNF-002| O aplicativo deverá respeitar as autorizações e restrições de privacidade do usuário. |  ALTA | 
+|RNF-003| O aplicativo deve possuir integração com contas vinculadas de outros serviços. |  MÉDIA | 
+|RNF-004| Os serviços de monitoramento de clima serão limitados ao território brasileiro. |  BAIXA | 
+|RNF-005| Será implementado um sistema de monetização através de ads. |  MÉDIA | 
+|RNF-006| O sistema de ads não deverá prejudicar a experiência do usuário no aplicativo. |  BAIXA | 
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
@@ -98,8 +109,9 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|01| O projeto deverá ser entregue no final do semestre letivo, não podendo extrapolar a data de 22/06/2022. |
+|02| O aplicativo deve manter todas as anotações privadas para cada usuário. Somente o criador de cada anotação tem acesso a ela. |
+|03| A aplicação não deve usar nada que não foi previamente apresentado nas disciplinas dos microfundamentos. |
 
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.

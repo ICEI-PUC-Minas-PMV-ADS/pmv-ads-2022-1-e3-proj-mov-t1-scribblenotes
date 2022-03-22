@@ -10,7 +10,7 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 As entrevistas foram feitas e as histórias contadas estão abaixo:
 
-| ![foto 1](img/img01.png) | **RAFAEL** |
+| ![foto 1](img/img01.png) | **RAFAEL** ||
 |:---:|:---:|:---:|
 ||||
 | **Idade:** | **Ocupação:** | **Aplicativos:** |

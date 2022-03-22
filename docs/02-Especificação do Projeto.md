@@ -45,6 +45,9 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |--------------------|------------------------------------|----------------------------------------|
 |Rafael | Saber sobre o clima em dias de treino aberto. | Conseguir cancelar meu horário com antecedência, para poder remarcar com o aluno, sem causar desentendimentos. |
 |Rodrigo | Armazenar informações não críticas em um único lugar. | Sempre que preciso relacionar algum documento a uma reunião, queria que esteja tudo relacionado em um app. |
+|Michelle | Uma ferramenta que eu possa ver o clima em um agendamento no app, independente da cidade que foi selecionada. | Sempre que eu viajo para ser guia, pode ter um problema, que é o clima, determinados locais, não podem ser aproveitados dependendo do tempo. |
+|Rafael | Deixar marcado meu horário com os alunos de forma simples. | Para que seja fácil de gerenciar esse horário, sem muitos cliques. |
+|Rodrigo | Organizar horários agendados. | Tenho muitas reuniões durante o dia, e queria organizar melhor esse tempo. |
 
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.

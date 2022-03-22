@@ -17,9 +17,7 @@ As entrevistas foram feitas e as histórias contadas estão abaixo:
 | 27 anos | Personal Trainer | Google Agenda; Nike Run Club; Funções de clima nativos |
 ||||
 | **Motivações:** | **Frustrações:** | **Hobbies, História:** |
-| Poder ter uma forma fácil de mostrar meus agendamentos, e saber como o dia vai estar. | Sempre que marco um horário com um aluno, fico preocupado de como vai estar o tempo, especificamente se o treino for em um local aberto. | Gosto de trabalhar com pessoas.
-Ser bem organizado.
-Treinar ao ar livre. |
+| Poder ter uma forma fácil de mostrar meus agendamentos, e saber como o dia vai estar. | Sempre que marco um horário com um aluno, fico preocupado de como vai estar o tempo, especificamente se o treino for em um local aberto. | Gosto de trabalhar com pessoas. Ser bem organizado. Treinar ao ar livre. |
 
 | ![foto 2](img/img02.png) | **RODRIGO** ||
 |:---:|:---:|:---:|
@@ -28,9 +26,7 @@ Treinar ao ar livre. |
 | 32 anos | Empresário | Linkedin; Twitter; Google Drive |
 ||||
 | **Motivações:** | **Frustrações:** | **Hobbies, História:** |
-| Conseguir armazenar suas informações não críticas, em um único lugar, que seja de fácil acesso e seja acessado com poucos cliques | Nos dias mais movimentados em seu cotidiano costuma esquecer documentos ou itens relacionados com reuniões marcadas em sua empresa. | Ser bem organizado.
-Nunca se atrasar.
-Ter controle sobre suas informações |
+| Conseguir armazenar suas informações não críticas, em um único lugar, que seja de fácil acesso e seja acessado com poucos cliques | Nos dias mais movimentados em seu cotidiano costuma esquecer documentos ou itens relacionados com reuniões marcadas em sua empresa. | Ser bem organizado. Nunca se atrasar. Ter controle sobre suas informações |
 
 | ![foto 3](img/img03.png) | **MICHELE** ||
 |:---:|:---:|:---:|
@@ -39,9 +35,7 @@ Ter controle sobre suas informações |
 | 29 anos | Guia Turistica | Pinterest; Instagram; Google Maps |
 ||||
 | **Motivações:** | **Frustrações:** | **Hobbies, História:** |
-| Sempre tentar trazer a melhor experiência para os seus clientes em suas viagens. | Quando ela marca algo com um grupo de turistas, ela sempre fica com medo de como vai estar o tempo, porque é sempre bom avisar com antecedência se a viagem terá que ser adiada, pois como são muitas viagens que ela realiza, nunca se lembra de olhar como vai estar o dia. | Ensinar história.
-Alegrar seus clientes
-Viajar. |
+| Sempre tentar trazer a melhor experiência para os seus clientes em suas viagens. | Quando ela marca algo com um grupo de turistas, ela sempre fica com medo de como vai estar o tempo, porque é sempre bom avisar com antecedência se a viagem terá que ser adiada, pois como são muitas viagens que ela realiza, nunca se lembra de olhar como vai estar o dia. | Ensinar história. Alegrar seus clientes. Viajar.|
 
 ## Histórias de Usuários
 

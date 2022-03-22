@@ -10,7 +10,7 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 As entrevistas foram feitas e as histórias contadas estão abaixo:
 
-| ![foto 1](img/img01.png) | **RAFAEL** |
+| ![foto 1](img/img01.png) | **RAFAEL** ||
 |:---:|:---:|:---:|
 ||||
 | **Idade:** | **Ocupação:** | **Aplicativos:** |
@@ -21,7 +21,7 @@ As entrevistas foram feitas e as histórias contadas estão abaixo:
 Ser bem organizado.
 Treinar ao ar livre. |
 
-| ![foto 2](img/img02.png) | **RODRIGO** |
+| ![foto 2](img/img02.png) | **RODRIGO** ||
 |:---:|:---:|:---:|
 ||||
 | **Idade:** | **Ocupação:** | **Aplicativos:** |
@@ -32,7 +32,7 @@ Treinar ao ar livre. |
 Nunca se atrasar.
 Ter controle sobre suas informações |
 
-| ![foto 3](img/img03.png) | **MICHELE** |
+| ![foto 3](img/img03.png) | **MICHELE** ||
 |:---:|:---:|:---:|
 ||||
 | **Idade:** | **Ocupação:** | **Aplicativos:** |

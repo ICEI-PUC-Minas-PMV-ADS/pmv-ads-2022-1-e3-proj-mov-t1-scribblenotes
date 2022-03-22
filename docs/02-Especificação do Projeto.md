@@ -19,7 +19,7 @@ As entrevistas foram feitas e as histórias contadas estão abaixo:
 | **Motivações:** | **Frustrações:** | **Hobbies, História:** |
 | Melhorar o atendimento aos clientes; Centralizar informações de seus clientes. | Dificuldade em gerir seu banco de dados de clientes. | Formado em arquitetura, atualmente trabalhando como fotógrafo profissional. |
 
-| ![foto 2](IMG02.png) | **MARÍLIA SANTOS** ||
+| ![foto 2](img/img02.png) | **MARÍLIA SANTOS** ||
 |:---:|:---:|:---:|
 ||||
 | **Idade:** | **Ocupação:** | **Aplicativos:** |
@@ -28,7 +28,7 @@ As entrevistas foram feitas e as histórias contadas estão abaixo:
 | **Motivações:** | **Frustrações:** | **Hobbies, História:** |
 | Criar carteira de clientes; Cadastrar clientes para gerar promoções. | Não saber o público alvo de seu negócio; Manter seus clientes. | Marília tem dificuldade em manter seus clientes antigos. |
 
-| ![foto 3](IMG03.png) | **THIAGO SOUTO** ||
+| ![foto 3](img/img03.png) | **THIAGO SOUTO** ||
 |:---:|:---:|:---:|
 ||||
 | **Idade:** | **Ocupação:** | **Aplicativos:** |

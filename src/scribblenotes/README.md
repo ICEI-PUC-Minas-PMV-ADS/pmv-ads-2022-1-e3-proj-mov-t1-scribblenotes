@@ -3,7 +3,6 @@
 <p>Video utilizado como guia para realizar a <a href="https://youtu.be/ApSHnjXeAq0?t=294">criação do ambiente de desenvolvimento</a></p>
 <p>Utilizando CLI a partir do tempo: <strong>4:55</strong></p>
 
-
 <h2>Problemas que podem se encontrados ao configurar o ambiente:</h2>
 
 <h3>Você não consegue instalar o Expo CLI na sua maquina pelo NPM</h3>
@@ -15,3 +14,6 @@
 
 <h3>Ao inicializar o dispositivo virtual pelo Android Studio tive algum problema na instalação da ferramenta HAXM necessaria para realizar a emulação.</h3>
 <p>Segui os passos <a href="https://mashtips.com/enable-virtualization-windows-10/">desse artigo</a> e tentei novamente, e funcionou normal.</p>
+
+<h2>Inicializando o projeto</h2>
+<strong>expo start</strong>

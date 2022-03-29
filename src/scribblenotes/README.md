@@ -17,3 +17,8 @@
 
 <h2>Inicializando o projeto</h2>
 <strong>expo start</strong>
+
+
+<h2>Snippets</h2>
+<strong>rnfc: create react component</strong>
+<strong>rnsc: create styled component</strong>

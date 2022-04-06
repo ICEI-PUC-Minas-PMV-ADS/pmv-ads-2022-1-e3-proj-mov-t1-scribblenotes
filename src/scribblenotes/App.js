@@ -1,18 +1,18 @@
-import { StatusBar } from 'expo-status-bar'
-import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-import Tasks from './src/components/Tasks'
+import { StyleSheet, View } from 'react-native';
+import { useFonts, Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/roboto';
 import AppLoading from 'expo-app-loading';
-import Home from './src/screens/Home'
-import { useFonts, Roboto_400Regular, Roboto_500Medium ,Roboto_700Bold } from '@expo-google-fonts/roboto';
-import { DARK_THEME } from './src/styles/themes/themes'
-import { ThemeProvider } from 'styled-components';
+import TaskBox from './src/components/TaskBox';
+import NewTaskButton from './src/components/NewTaskButton';
+import Layout from './src/components/Layout';
+import Header from './src/components/Header';
+import Bottom from './src/components/Bottom';
+import { DefaultTheme, Provider as PaperProvider } from 'react-native-paper';
+import { blue } from './src/styles/colors';
 
 export default function App() {
   let [fontsLoaded] = useFonts({
-    Roboto_400Regular,
-    Roboto_500Medium,
     Roboto_700Bold,
+    Roboto_400Regular,
   });
 
   if (!fontsLoaded) {
@@ -20,11 +20,19 @@ export default function App() {
   }
 
   return (
-    <ThemeProvider theme={DARK_THEME}>
-      <Home>
-        <Tasks />
-      </Home>
-    </ThemeProvider>
+    <PaperProvider theme={theme}>
+      <Bottom />
+    </PaperProvider>
   );
 }
- 
+
+
+const theme = {
+  ...DefaultTheme,
+  colors: {
+    ...DefaultTheme.colors,
+    primary: blue[500],
+    accent: 'yellow',
+    background: blue[300],
+  },
+};

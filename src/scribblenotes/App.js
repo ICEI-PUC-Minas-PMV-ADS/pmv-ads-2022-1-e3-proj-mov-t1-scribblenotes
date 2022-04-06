@@ -1,20 +1,38 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import { useFonts, Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/roboto';
+import AppLoading from 'expo-app-loading';
+import TaskBox from './src/components/TaskBox';
+import NewTaskButton from './src/components/NewTaskButton';
+import Layout from './src/components/Layout';
+import Header from './src/components/Header';
+import Bottom from './src/components/Bottom';
+import { DefaultTheme, Provider as PaperProvider } from 'react-native-paper';
+import { blue } from './src/styles/colors';
 
 export default function App() {
+  let [fontsLoaded] = useFonts({
+    Roboto_700Bold,
+    Roboto_400Regular,
+  });
+
+  if (!fontsLoaded) {
+    return <AppLoading />;
+  }
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <PaperProvider theme={theme}>
+      <Bottom />
+    </PaperProvider>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+
+const theme = {
+  ...DefaultTheme,
+  colors: {
+    ...DefaultTheme.colors,
+    primary: blue[500],
+    accent: 'yellow',
+    background: blue[300],
   },
-});
+};

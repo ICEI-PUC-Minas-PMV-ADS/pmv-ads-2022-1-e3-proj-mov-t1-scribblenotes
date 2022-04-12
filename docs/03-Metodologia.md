@@ -71,6 +71,6 @@ O projeto será desenvolvidos a partir de diversas plataformas e a relação dos
 |         Editor de código          |                      Visual Studio Code                      |
 |       Documentos do projeto       |                    Office online / Teams                     |
 | Projeto de Interface e Wireframes | <a href="https://www.figma.com/file/RYR472qGS77Kyg7xZt3CH4/Scribblenotes-Layout?node-id=0%3A1" target="_blank">Figma</a> |
-|     Gerenciamento do Projeto      | <a href="https://github.com/viniciussoares982/pmv-ads-2022-1-E3-proj-scribblenotes" target="_blank">Github</a> |
+|     Gerenciamento do Projeto      | <a href="https://dev.azure.com/1337243/Scribblenotes/_sprints/taskboard/Scribblenotes%20Team/Scribblenotes/Scribblenotes%20React%20Native" target="_blank">Azure DevOps</a> |
 |             Diagramas             |                          Lucidchart                          |
 |            Comunicação            |                       WhatsApp, Discord e Teams              |

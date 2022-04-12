@@ -1,4 +1,4 @@
-# Especificações do Projeto
+## Especificações do Projeto
 
 <span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
 
@@ -8,19 +8,34 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+As entrevistas foram feitas e as histórias contadas estão abaixo:
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+| ![foto 1](img/img01.png) | **RAFAEL** ||
+|:---:|:---:|:---:|
+||||
+| **Idade:** | **Ocupação:** | **Aplicativos:** |
+| 27 anos | Personal Trainer | Google Agenda; Nike Run Club; Funções de clima nativos |
+||||
+| **Motivações:** | **Frustrações:** | **Hobbies, História:** |
+| Poder ter uma forma fácil de mostrar meus agendamentos, e saber como o dia vai estar. | Sempre que marco um horário com um aluno, fico preocupado de como vai estar o tempo, especificamente se o treino for em um local aberto. | Gosto de trabalhar com pessoas. Ser bem organizado. Treinar ao ar livre. |
 
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+| ![foto 2](img/img02.png) | **RODRIGO** ||
+|:---:|:---:|:---:|
+||||
+| **Idade:** | **Ocupação:** | **Aplicativos:** |
+| 32 anos | Empresário | Linkedin; Twitter; Google Drive |
+||||
+| **Motivações:** | **Frustrações:** | **Hobbies, História:** |
+| Conseguir armazenar suas informações não críticas, em um único lugar, que seja de fácil acesso e seja acessado com poucos cliques | Nos dias mais movimentados em seu cotidiano costuma esquecer documentos ou itens relacionados com reuniões marcadas em sua empresa. | Ser bem organizado. Nunca se atrasar. Ter controle sobre suas informações |
+
+| ![foto 3](img/img03.png) | **MICHELE** ||
+|:---:|:---:|:---:|
+||||
+| **Idade:** | **Ocupação:** | **Aplicativos:** |
+| 29 anos | Guia Turistica | Pinterest; Instagram; Google Maps |
+||||
+| **Motivações:** | **Frustrações:** | **Hobbies, História:** |
+| Sempre tentar trazer a melhor experiência para os seus clientes em suas viagens. | Quando ela marca algo com um grupo de turistas, ela sempre fica com medo de como vai estar o tempo, porque é sempre bom avisar com antecedência se a viagem terá que ser adiada, pois como são muitas viagens que ela realiza, nunca se lembra de olhar como vai estar o dia. | Ensinar história. Alegrar seus clientes. Viajar.|
 
 ## Histórias de Usuários
 
@@ -28,8 +43,12 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+|Rafael | Saber sobre o clima em dias de treino aberto. | Conseguir cancelar meu horário com antecedência, para poder remarcar com o aluno, sem causar desentendimentos. |
+|Rodrigo | Armazenar informações não críticas em um único lugar. | Sempre que preciso relacionar algum documento a uma reunião, queria que esteja tudo relacionado em um app. |
+|Michelle | Uma ferramenta que eu possa ver o clima em um agendamento no app, independente da cidade que foi selecionada. | Sempre que eu viajo para ser guia, pode ter um problema, que é o clima, determinados locais, não podem ser aproveitados dependendo do tempo. |
+|Rafael | Deixar marcado meu horário com os alunos de forma simples. | Para que seja fácil de gerenciar esse horário, sem muitos cliques. |
+|Rodrigo | Organizar horários agendados. | Tenho muitas reuniões durante o dia, e queria organizar melhor esse tempo. |
+
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
@@ -40,54 +59,34 @@ Apresente aqui as histórias de usuário que são relevantes para o projeto de s
 > - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
 > - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
 
-## Modelagem do Processo de Negócio 
-
-### Análise da Situação Atual
-
-Apresente aqui os problemas existentes que viabilizam sua proposta. Apresente o modelo do sistema como ele funciona hoje. Caso sua proposta seja inovadora e não existam processos claramente definidos, apresente como as tarefas que o seu sistema pretende implementar são executadas atualmente, mesmo que não se utilize tecnologia computacional. 
-
-### Descrição Geral da Proposta
-
-Apresente aqui uma descrição da sua proposta abordando seus limites e suas ligações com as estratégias e objetivos do negócio. Apresente aqui as oportunidades de melhorias.
-
-### Processo 1 – NOME DO PROCESSO
-
-Apresente aqui o nome e as oportunidades de melhorias para o processo 1. Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN. 
-
-![Processo 1](img/02-bpmn-proc1.png)
-
-### Processo 2 – NOME DO PROCESSO
-
-Apresente aqui o nome e as oportunidades de melhorias para o processo 2. Em seguida, apresente o modelo do processo 2, descrito no padrão BPMN.
-
-![Processo 2](img/02-bpmn-proc2.png)
-
-## Indicadores de Desempenho
-
-Apresente aqui os principais indicadores de desempenho e algumas metas para o processo. Atenção: as informações necessárias para gerar os indicadores devem estar contempladas no diagrama de classe. Colocar no mínimo 5 indicadores. 
-
-Usar o seguinte modelo: 
-
-![Indicadores de Desempenho](img/02-indic-desemp.png)
-Obs.: todas as informações para gerar os indicadores devem estar no diagrama de classe a ser apresentado a posteriori. 
-
 ## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto. Para determinar a prioridade de requisitos, aplicar uma técnica de priorização de requisitos e detalhar como a técnica foi aplicada.
+As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
 
 ### Requisitos Funcionais
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| A página inicial da aplicação deve possibilitar ao usuário fazer login, se cadastrar ou alterar sua senha; | ALTA | 
+|RF-002| A aplicação deve permitir ao usuário adicionar suas anotações. | ALTA |
+|RF-003| A aplicação deve permitir visualizar o clima em tempo real. | ALTA |
+|RF-004| A aplicação deverá permitir fazer o acompanhamento do local escolhido através de uma API de Geolocalização. | MÉDIA |
+|RF-005| A aplicação deve conter um espaço para o usuário adicionar fotos. | MÉDIA |
+|RF-006| A aplicação deverá permitir ao usuário visualizar seus compromissos na semana ou mês. | ALTA |
+|RF-007| A aplicação deverá ter como itens de menu: Home, agenda, clima, sobre e Contato; | BAIXA |
+|RF-008| A aplicação deve permitir ao usuário visualizar a agenda e o clima. | MÉDIA |
+|RF-009| A aplicação deve permitir ao usuário de agenda apagar suas anotações ou marcar como finalizadas. | ALTA |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-001| UI deve ser compatível com a resolução das telas da maioria dos smartphones | ALTA | 
+|RNF-002| O aplicativo deverá respeitar as autorizações e restrições de privacidade do usuário. |  ALTA | 
+|RNF-003| O aplicativo deve possuir integração com contas vinculadas de outros serviços. |  MÉDIA | 
+|RNF-004| Os serviços de monitoramento de clima serão limitados ao território brasileiro. |  BAIXA | 
+|RNF-005| Será implementado um sistema de monetização através de ads. |  MÉDIA | 
+|RNF-006| O sistema de ads não deverá prejudicar a experiência do usuário no aplicativo. |  BAIXA | 
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
@@ -110,8 +109,10 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|01| O projeto deverá ser entregue no final do semestre letivo, não podendo extrapolar a data de 22/06/2022. |
+|02| O aplicativo deve manter todas as anotações privadas para cada usuário. Somente o criador de cada anotação tem acesso a ela. |
+|03| A aplicação não deve usar nada que não foi previamente apresentado nas disciplinas dos microfundamentos. |
+
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
 

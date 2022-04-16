@@ -4,7 +4,6 @@ import { useFonts, Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/
 import AppLoading from 'expo-app-loading';
 import Layout from '../components/Layout';
 import Header from '../components/Header';
-import Bottom from '../components/Bottom';
 import { Text } from 'react-native-paper';
 
 export default function CreateTasks() {

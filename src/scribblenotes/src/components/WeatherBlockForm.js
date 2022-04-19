@@ -4,11 +4,13 @@ import AppLoading from 'expo-app-loading';
 import { StyleSheet, View } from 'react-native';
 import { Text } from 'react-native-paper';
 import api from '../services/axios';
+
 export default function WeatherBlockForm() {
   const [selectedLanguage, setSelectedLanguage] = React.useState();
   const [wheaterInfo, setWeatherInfo] = React.useState()
+
   React.useEffect(() => {
-    api.get('/weather?key=3660b20c').then(({data}) => {
+    api.get('/weather?format=json-cors&key=3660b20c/').then(({data}) => {
       console.log(data)
     })
   }, [])

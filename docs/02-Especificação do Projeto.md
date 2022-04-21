@@ -120,6 +120,33 @@ Enumere as restrições à sua solução. Lembre-se de que as restrições geral
 > - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
 > - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
+
+### Técnica de Priorização de requisitos.
+
+A técnica para priorização de requisitos escolhida é o método MoSCoW. Esse método é bastante efetivo para times que queiram incluir representantes de todos os departamentos da empresa no processo, conseguindo uma perspectiva mais ampla do projeto.
+
+O termo MoSCoW é um acrônimo em inglês derivado da primeira letra de cada uma das quatro categorias com os “Os” no meio para fazer a palavra ser pronunciável. Fica assim:
+
+-Must Have (Tenho que fazer)
+-Should Have (Devo fazer)
+-Could Have (Poderia fazer)
+-Won’t Have (Não é necessário fazer)
+
+Nesse sentido, a ordem de importância das tarefas vai seguindo uma ordem decrescente, onde Must Have são as mais relevantes e as Won’t Have as que podem ficar para depois.
+
+Uma outra razão de usar o MoSCoW é que ele permite às equipes determinarem quanto esforço será despendido para cada categoria. Portanto, você pode se assegurar de estar desenvolvendo uma boa variedade de soluções em cada entrega.
+
+Abaixo estão as tabelas dashboard dos requisitos funcionais e não funcionadas aplicadas respectivamente sobre o método MoSCoW.
+
+Requisitos Funcionais
+
+![Funcionais](https://user-images.githubusercontent.com/82729897/164347617-fd2b21ca-5f55-413e-87c5-764f1255b0ea.png)
+
+Requisitos Não-Funcionais
+
+![Não funcionais](https://user-images.githubusercontent.com/82729897/164347761-19d94c34-524a-472f-be1f-42e8146c8228.png)
+
+
 ## Diagrama de Casos de Uso
 
 O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
@@ -132,6 +159,19 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de
 > - [Lucidchart](https://www.lucidchart.com/)
 > - [Astah](https://astah.net/)
 > - [Diagrams](https://app.diagrams.net/)
+
+
+|ID    | Descrição do Requisito  | Prioridade |
+|------|-----------------------------------------|----|
+|RF-001| A página inicial da aplicação deve possibilitar ao usuário fazer login, se cadastrar ou alterar sua senha; | ALTA | 
+|RF-002| A aplicação deve permitir ao usuário adicionar suas anotações. | ALTA |
+|RF-003| A aplicação deve permitir visualizar o clima em tempo real. | ALTA |
+|RF-004| A aplicação deverá permitir fazer o acompanhamento do local escolhido através de uma API de Geolocalização. | MÉDIA |
+|RF-005| A aplicação deve conter um espaço para o usuário adicionar fotos. | MÉDIA |
+|RF-006| A aplicação deverá permitir ao usuário visualizar seus compromissos na semana ou mês. | ALTA |
+|RF-007| A aplicação deverá ter como itens de menu: Home, agenda, clima, sobre e Contato; | BAIXA |
+|RF-008| A aplicação deve permitir ao usuário visualizar a agenda e o clima. | MÉDIA |
+|RF-009| A aplicação deve permitir ao usuário de agenda apagar suas anotações ou marcar como finalizadas. | ALTA |
 
 # Matriz de Rastreabilidade
 

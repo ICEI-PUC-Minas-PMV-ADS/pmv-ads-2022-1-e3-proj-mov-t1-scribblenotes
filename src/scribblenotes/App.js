@@ -8,6 +8,7 @@ import Header from './src/components/Header';
 import Bottom from './src/components/Bottom';
 import { DefaultTheme, Provider as PaperProvider } from 'react-native-paper';
 import { blue } from './src/styles/colors';
+import {DatabaseInit} from './src/database/database-init'
 
 export default function App() {
   let [fontsLoaded] = useFonts({
@@ -19,10 +20,14 @@ export default function App() {
     return <AppLoading />;
   }
 
+  
   return (
-    <PaperProvider theme={theme}>
-      <Bottom />
-    </PaperProvider>
+    <>
+      {/* <DatabaseInit /> */}
+      <PaperProvider theme={theme}>
+        <Bottom />
+      </PaperProvider>
+    </>
   );
 }
 

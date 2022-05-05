@@ -5,7 +5,7 @@ import TaskBox from '../components/TaskBox';
 import NewTaskButton from '../components/NewTaskButton';
 import Layout from '../components/Layout';
 
-export default function App() {
+export default function Tasks() {
   let [fontsLoaded] = useFonts({
     Roboto_700Bold,
     Roboto_400Regular,

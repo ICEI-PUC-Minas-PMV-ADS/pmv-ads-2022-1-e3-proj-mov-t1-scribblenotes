@@ -18,9 +18,10 @@ export default function App() {
   return (
     <Layout subtitle='Home'>
       <View style={styles.body}>
-      
+        <NewTaskButton />
         <ScrollTask />
       </View>
+
     </Layout>
   );
 }

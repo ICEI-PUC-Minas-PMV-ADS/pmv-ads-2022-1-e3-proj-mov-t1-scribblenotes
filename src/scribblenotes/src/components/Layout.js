@@ -6,7 +6,6 @@ import AppLoading from 'expo-app-loading';
 import { blue } from '../styles/colors';
 import { Appbar } from 'react-native-paper';
 import Header from './Header';
-import Bottom from './Bottom';
 
 export default function Layout({children, subtitle}) {
   let [fontsLoaded] = useFonts({

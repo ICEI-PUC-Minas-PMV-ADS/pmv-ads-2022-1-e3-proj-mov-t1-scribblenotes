@@ -5,6 +5,130 @@
 Apresente os cenários de testes utilizados na realização dos testes da sua aplicação. Escolha cenários de testes que demonstrem os requisitos sendo satisfeitos.
 
 Enumere quais cenários de testes foram selecionados para teste. Neste tópico o grupo deve detalhar quais funcionalidades avaliadas, o grupo de usuários que foi escolhido para participar do teste e as ferramentas utilizadas.
+
+## Plano de Testes de Software
+
+Aqui está descrito os planos de testes elaborados especificamente para a aplicação.
+
+Caso de teste CT01-
+
+-> Objetivo do teste:
+
+Requisitos Associados:
+
+Passos:
+
+Critérios de Exito:
+
+---
+
+Caso de teste CT02-
+
+-> Objetivo do teste:
+
+Requisitos Associados:
+
+Passos:
+
+Critérios de Exito:
+
+---
+
+Caso de teste CT03-
+
+-> Objetivo do teste:
+
+Requisitos Associados:
+
+Passos:
+
+Critérios de Exito:
+
+---
+
+Caso de teste CT04-
+
+-> Objetivo do teste:
+
+Requisitos Associados:
+
+Passos:
+
+Critérios de Exito:
+
+---
+
+Caso de teste CT05-
+
+-> Objetivo do teste:
+
+Requisitos Associados:
+
+Passos:
+
+Critérios de Exito:
+
+---
+
+Caso de teste CT06-
+
+-> Objetivo do teste:
+
+Requisitos Associados:
+
+Passos:
+
+Critérios de Exito:
+
+---
+
+Caso de teste CT07-
+
+-> Objetivo do teste:
+
+Requisitos Associados:
+
+Passos:
+
+Critérios de Exito:
+
+---
+
+Caso de teste CT08-
+
+-> Objetivo do teste:
+
+Requisitos Associados:
+
+Passos:
+
+Critérios de Exito:
+
+---
+
+Caso de teste CT09-
+
+-> Objetivo do teste:
+
+Requisitos Associados:
+
+Passos:
+
+Critérios de Exito:
+
+---
+
+Caso de teste CT10-
+
+-> Objetivo do teste:
+
+Requisitos Associados:
+
+Passos:
+
+Critérios de Exito:
+
+---
  
 ## Ferramentas de Testes (Opcional)
 

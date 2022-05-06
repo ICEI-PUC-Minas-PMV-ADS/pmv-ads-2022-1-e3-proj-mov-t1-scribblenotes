@@ -1,47 +1,104 @@
 import React from 'react'
-import {Picker} from '@react-native-picker/picker';
-import AppLoading from 'expo-app-loading';
-import { StyleSheet, View } from 'react-native';
-import { Text, Button, TextInput } from 'react-native-paper';
-import api from '../services/axios';
+import {Picker} from '@react-native-picker/picker'
+import AppLoading from 'expo-app-loading'
+import { StyleSheet, View } from 'react-native'
+import { Text, Button, TextInput } from 'react-native-paper'
+import api from '../services/axios'
+
 
 export default function WeatherBlockForm() {
-  const [selectedLanguage, setSelectedLanguage] = React.useState();
-  const [wheaterInfo, setWeatherInfo] = React.useState()
-  const [text, setText] = React.useState('')
-
-  const [ cityName, setCityName ] = React.useState('Campinas,SP')
+  const [selectedCity, setSelectedCity] = React.useState()
+  const [forecastDays, setForecastDays] = React.useState([])
+  const [dateWeatherInfo, setDateWeatherInfo] = React.useState()
 
   React.useEffect(() => {
-    api.get(`/weather?format=json-cors&key=3660b20c&city_name=${cityName}/`).then(({data}) => {
-      console.log(data.results)
-    })
-  }, [cityName])
+  }, [selectedCity])
 
-  const pickerRef = React.useRef();
+  const callAPI = () => {
+    api.get(`/weather?format=json-cors&key=3660b20c&city_name=${selectedCity}/`).then(({data}) => {
+      console.log(data.results)
+      const { results } = data
+
+      setForecastDays([...results.forecast])
+    }).catch((err) => {
+      console.log(err)
+    })
+  }
+
+  const cityPickerRef = React.useRef();
+  const weatherDatePickerRef = React.useRef();
 
   function open() {
-    pickerRef.current.focus();
+    cityPickerRef.current.focus();
   }
 
   function close() {
-    pickerRef.current.blur();
+    cityPickerRef.current.blur();
+  }
+
+  
+  const collectCompleteWeatherInfo = () => {
+    console.log(dateWeatherInfo)
+    const selectDay = forecastDays.find((day) => day.date === dateWeatherInfo)
+    console.log(selectDay)
   }
 
   return (
     <View>
-      <Picker
-          ref={pickerRef}
-          selectedValue={selectedLanguage}
+      <View style={{paddingVertical: 8}}>
+        <View>
+          <Text style={{paddingBottom: 8, fontSize: 18}}>
+            Selecione a Cidade
+          </Text>
+        </View>
+        <Picker
+            ref={cityPickerRef}
+            selectedValue={selectedCity}
+            onValueChange={(itemValue, itemIndex) => {
+              callAPI()
+              setSelectedCity(itemValue)
+            }
+          }
+            style={styles.picker}
+          >
+          <Picker.Item label="Selecionar Cidade" value="null" />
+          <Picker.Item label="Belo Horizonte, MG" value="BH,MG" />
+          <Picker.Item label="Uberaba, MG" value="Uberaba,MG" />
+          <Picker.Item label="Uberlândia, MG" value="Uberlandia,MG" />
+          <Picker.Item label="Divinópolis, MG" value="Divinopolis, MG" />
+          <Picker.Item label="Campinas, SP" value="Campinas,SP" />
+          <Picker.Item label="São Paulo, SP" value="SaoPaulo,SP" />
+          <Picker.Item label="Salvador, BA" value="Salvador,BA" />
+          <Picker.Item label="Manaus, AM" value="Manaus,AM" />
+          <Picker.Item label="Curitiba, PR" value="Curitiba,PR" />
+          <Picker.Item label="Florianopolis, SC" value="Florianopolis,SC" />
+        </Picker>
+      </View>
+      <View style={{paddingVertical: 8}}>
+        <View>
+          <Text style={{paddingBottom: 8, fontSize: 18}}>
+            Selecione a data
+          </Text>
+        </View>
+        <Picker
+          ref={weatherDatePickerRef}
+          selectedValue={dateWeatherInfo}
           onValueChange={(itemValue, itemIndex) =>
-          setSelectedLanguage(itemValue)
-        }>
-        <Picker.Item label="Java" value="java" />
-        <Picker.Item label="JavaScript" value="js" />
-      </Picker>
-      <Button icon="camera" mode="contained" onPress={() => setCityName('BH,MG')}>
-        Mudar Cidade
-      </Button>
+            setDateWeatherInfo(itemValue)
+          }
+          style={styles.picker}
+          enabled={forecastDays ? true : false}
+          >
+            {forecastDays.map((forecast) => (
+              <Picker.Item key={forecast.date} label={`${forecast.date} - ${forecast.description}`} value={forecast.date} />
+            ))}
+        </Picker>
+      </View>
+      <View style={{paddingVertical: 8}}>
+        <Button mode="contained" onPress={() => collectCompleteWeatherInfo()}>
+          Coletar Info da Data
+        </Button>
+      </View>
     </View>
   );
 }
@@ -50,4 +107,10 @@ const styles = StyleSheet.create({
   button: {
     marginVertical: 16,
   },
+  picker: {
+    height: 32,
+    backgroundColor: '#ffffffba',
+    borderWidth: 0,
+    borderRadius: 6,
+  }
 });

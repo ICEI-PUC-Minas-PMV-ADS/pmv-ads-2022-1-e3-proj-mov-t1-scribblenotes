@@ -160,9 +160,21 @@ Critérios de Êxito: O usuário foi capaz de criar uma conta, fazer o login e m
 
 Requisitos Associados: RF-007 	A aplicação deverá ter como itens de menu: Home, agenda, clima, sobre e Contato.
 
-Passos: 1) Acessar o aplicativo 2) Clicar no botão Home 3) Clicar no botão criar tarefa 4)Clicar no botão clima 5) Clicar no botão contato 6) Clicar no botão adicionar tarefa.
+Passos: 
 
-Critérios de Exito: Redirecionado para a página selecionada.
+1- Acessar o aplicativo.
+
+2- Clicar no botão Home.
+
+3- Clicar no botão criar tarefa.
+
+4- Clicar no botão clima.
+
+5- Clicar no botão contato.
+
+6- Clicar no botão adicionar tarefa.
+
+Critérios de Êxito: Redirecionado para a página selecionada.
 
 ---
 

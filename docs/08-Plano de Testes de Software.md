@@ -10,7 +10,65 @@ Enumere quais cenários de testes foram selecionados para teste. Neste tópico o
 
 Aqui está descrito os planos de testes elaborados especificamente para a aplicação.
 
-Caso de teste CT01-
+**Caso de teste CT01**
+
+-> Objetivo do teste:
+
+-> Requisitos Associados:
+
+Passos:
+
+Critérios de Exito:
+
+---
+
+**Caso de teste CT02**
+
+Objetivo do teste: Na tela de adicionar tasks, o usuário deve ser capaz de selecionar personalizar uma anotação criada pelo mesmo.
+
+Requisitos Associados: RF-002 	A aplicação deve permitir ao usuário adicionar suas anotações.
+
+Passos:
+
+1- Acessar o site que hospeda o aplicativo na internet.
+
+2- Baixar o aplicativo no dispositivo móvel.
+
+3- Acessar a aplicação instalada.
+
+4- Selecionar a página de criar tasks.
+
+5- Preencher os campos requisitados.
+
+Critérios de Exito: O usuário deve conseguir criar e personalizar uma anotação própria, a mesma deve aparecer na página principal (home page) do aplicativo.
+
+---
+
+**Caso de teste CT03**
+
+Objetivo do teste: Na tela principal e após criar uma anotação, os dados relativos ao clima devem aparecer na anotação.
+
+Requisitos Associados: RF-003 	A aplicação deve permitir visualizar o clima em tempo real.
+
+Passos:
+
+1- Acessar o site que hospeda o aplicativo na internet.
+
+2- Baixar o aplicativo no dispositivo móvel.
+
+3- Acessar a aplicação instalada.
+
+4- Selecionar a página de criar tasks.
+
+5- Preencher os campos requisitados.
+
+6- Visualizar o campo da API de clima.
+
+Critérios de Exito: O usuário deve ser capaz de visualizar os dados referentes ao clima da região escolhida na área dessa função na aplicação.
+
+---
+
+**Caso de teste CT04**
 
 -> Objetivo do teste:
 
@@ -22,7 +80,7 @@ Critérios de Exito:
 
 ---
 
-Caso de teste CT02-
+**Caso de teste CT05**
 
 -> Objetivo do teste:
 
@@ -34,7 +92,7 @@ Critérios de Exito:
 
 ---
 
-Caso de teste CT03-
+**Caso de teste CT06**
 
 -> Objetivo do teste:
 
@@ -46,7 +104,7 @@ Critérios de Exito:
 
 ---
 
-Caso de teste CT04-
+**Caso de teste CT07**
 
 -> Objetivo do teste:
 
@@ -58,7 +116,7 @@ Critérios de Exito:
 
 ---
 
-Caso de teste CT05-
+**Caso de teste CT08**
 
 -> Objetivo do teste:
 
@@ -70,7 +128,7 @@ Critérios de Exito:
 
 ---
 
-Caso de teste CT06-
+**Caso de teste CT09**
 
 -> Objetivo do teste:
 
@@ -82,43 +140,7 @@ Critérios de Exito:
 
 ---
 
-Caso de teste CT07-
-
--> Objetivo do teste:
-
-Requisitos Associados:
-
-Passos:
-
-Critérios de Exito:
-
----
-
-Caso de teste CT08-
-
--> Objetivo do teste:
-
-Requisitos Associados:
-
-Passos:
-
-Critérios de Exito:
-
----
-
-Caso de teste CT09-
-
--> Objetivo do teste:
-
-Requisitos Associados:
-
-Passos:
-
-Critérios de Exito:
-
----
-
-Caso de teste CT10-
+**Caso de teste CT10**
 
 -> Objetivo do teste:
 

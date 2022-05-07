@@ -4,7 +4,7 @@ import AppLoading from 'expo-app-loading';
 import Layout from '../components/Layout';
 import { Text, TextInput, Switch } from 'react-native-paper';
 import React, { useState } from 'react';
-import WeatherBlockForm from '../components/weatherBlockForm';
+import WeatherBlockForm from '../components/WeatherBlockForm';
 
 export default function CreateTasks() {
   const [values, setValues] = useState({

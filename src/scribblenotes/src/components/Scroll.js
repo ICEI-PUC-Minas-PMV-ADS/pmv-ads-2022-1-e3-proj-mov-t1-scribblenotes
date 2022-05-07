@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { SafeAreaView, FlatList, StyleSheet } from 'react-native';
+import { FlatList, StyleSheet } from 'react-native';
 import { useState } from "react";
 import TaskBox from '../components/TaskBox';
 
@@ -14,7 +14,6 @@ export default function Scroll() {
     const [tasks] = useState(buscaValoresDoBanco());
 
     return (
-        <SafeAreaView>
 
             <FlatList
                 data={tasks}
@@ -23,7 +22,6 @@ export default function Scroll() {
                 )}
                 keyExtractor={(item) => item.id}
             />
-        </SafeAreaView>
     );
 
 

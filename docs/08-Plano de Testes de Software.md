@@ -84,7 +84,7 @@ Critérios de Exito:
 
 Caso de teste CT07- 
 
--> Objetivo do teste: Verificar se os links do BottomNavigation estão redirecionando para as devidas telas.
+-> Objetivo do testes: Verificar se os links do BottomNavigation estão redirecionando para as devidas telas.
 
 Requisitos Associados: RF-007 	A aplicação deverá ter como itens de menu: Home, agenda, clima, sobre e Contato.
 

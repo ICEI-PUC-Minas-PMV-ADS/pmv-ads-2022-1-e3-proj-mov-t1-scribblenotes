@@ -8,17 +8,27 @@ Enumere quais cenários de testes foram selecionados para teste. Neste tópico o
 
 ## Plano de Testes de Software
 
-Aqui está descrito os planos de testes elaborados especificamente para a aplicação.
+Aqui está descrito os planos de testes elaborados especificamente para a aplicação Scribblenotes.
 
 **Caso de teste CT01**
 
--> Objetivo do teste:
+Objetivo do teste: Visualizar as informações sobre o clima e a página da agenda.
 
--> Requisitos Associados:
+Requisitos Associados: RF-008 A aplicação deve permitir ao usuário visualizar a agenda e o clima.
 
 Passos:
 
-Critérios de Exito:
+1- Acessar o site que hospeda o aplicativo na internet.
+
+2- Baixar o aplicativo no dispositivo móvel.
+
+3- Acessar a aplicação instalada.
+
+4- Navegar ao longo da página de criar tasks e de visualizar as tasks já criadas.
+
+5- Visualizar a agenda e o clima.
+
+Critérios de Êxito: O usuário conseguiu visualizar ambas as informações requisitadas em suas respectivas áreas da aplicação.
 
 ---
 
@@ -40,7 +50,7 @@ Passos:
 
 5- Preencher os campos requisitados.
 
-Critérios de Exito: O usuário deve conseguir criar e personalizar uma anotação própria, a mesma deve aparecer na página principal (home page) do aplicativo.
+Critérios de Êxito: O usuário deve conseguir criar e personalizar uma anotação própria, a mesma deve aparecer na página principal (home page) do aplicativo.
 
 ---
 
@@ -62,45 +72,85 @@ Passos:
 
 5- Preencher os campos requisitados.
 
-6- Visualizar o campo da API de clima.
+6- Visualizar o campo da API de clima e geolocalização.
 
-Critérios de Exito: O usuário deve ser capaz de visualizar os dados referentes ao clima da região escolhida na área dessa função na aplicação.
+Critérios de Êxito: O usuário deve ser capaz de visualizar os dados referentes ao clima da região escolhida na área dessa função na aplicação.
 
 ---
 
 **Caso de teste CT04**
 
--> Objetivo do teste:
+Objetivo do teste: Na tela principal e após criar uma anotação, os dados relativos à API de geolocalização devem aparecer na anotação.
 
-Requisitos Associados:
+Requisitos Associados: RF-004 A aplicação deverá permitir fazer o acompanhamento do local escolhido através de uma API de Geolocalização.
 
 Passos:
 
-Critérios de Exito:
+1- Acessar o site que hospeda o aplicativo na internet.
+
+2- Baixar o aplicativo no dispositivo móvel.
+
+3- Acessar a aplicação instalada.
+
+4- Selecionar a página de criar tasks.
+
+5- Preencher os campos requisitados.
+
+6- Visualizar o campo da API de clima e geolocalização.
+
+Critérios de Êxito: O usuário conseguir visualizar os dados referentes ao clima da região escolhida na área dessa função na aplicação.
 
 ---
 
 **Caso de teste CT05**
 
--> Objetivo do teste:
+Objetivo do teste: O usuário deve ser capaz de visualizar o que ele selecionou para a semana ou mês na página principal da aplicação (homepage).
 
-Requisitos Associados:
+Requisitos Associados: RF-006 	A aplicação deverá permitir ao usuário visualizar seus compromissos na semana ou mês.
 
 Passos:
 
-Critérios de Exito:
+1- Acessar o site que hospeda o aplicativo na internet.
+
+2- Baixar o aplicativo no dispositivo móvel.
+
+3- Acessar a aplicação instalada.
+
+4- Alternar entre as tasks específicas da semana e mês.
+
+Critérios de Êxito: A aplicação disponibilizou as anotações criadas pelo usuário na página principal e o mesmo conseguiu acessá-las e visualizá-las com êxito.
 
 ---
 
 **Caso de teste CT06**
 
--> Objetivo do teste:
+Objetivo do teste: O usuário deve conseguir fazer login, se cadastrar ou alterar a senha com a ajuda do banco de dados da aplicação
 
-Requisitos Associados:
+Requisitos Associados: RF-001 	A página inicial da aplicação deve possibilitar ao usuário fazer login, se cadastrar ou alterar sua senha;
 
 Passos:
 
-Critérios de Exito:
+1- Acessar o site que hospeda o aplicativo na internet.
+
+2- Baixar o aplicativo no dispositivo móvel.
+
+3- Acessar a aplicação instalada.
+
+4- Acessar a página de cadastro.
+
+5- Colocar os dados relativos ao usuário
+
+6- Acessar a aplicação
+
+7- Sair da conta
+
+8- Retornar a aplicação
+
+9- Fazer o login do usuário já cadastrado
+
+10- Alterar a senha colocada previamente.
+
+Critérios de Êxito: O usuário foi capaz de criar uma conta, fazer o login e mudar a senha da conta previamente criada com êxito.
 
 ---
 

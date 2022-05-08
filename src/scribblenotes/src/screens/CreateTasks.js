@@ -2,7 +2,7 @@ import { StyleSheet, View } from 'react-native';
 import { useFonts, Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/roboto';
 import AppLoading from 'expo-app-loading';
 import Layout from '../components/Layout';
-import { Text, TextInput, Switch } from 'react-native-paper';
+import { Text, TextInput, Switch, Button } from 'react-native-paper';
 import React, { useState } from 'react';
 import WeatherBlockForm from '../components/WeatherBlockForm';
 
@@ -44,6 +44,10 @@ export default function CreateTasks() {
     return <AppLoading />;
   }
 
+  const createTask = () => {
+    
+  }
+
   return (
     <Layout subtitle='Criar Tarefa'>
       <View style={styles.body}>
@@ -71,9 +75,9 @@ export default function CreateTasks() {
             <Text style={{fontSize: 16, fontWeight: 600}}>Monitorar Clima</Text>
             <Switch value={isSwitchOn} onValueChange={onToggleSwitch} />
             {isSwitchOn &&  <WeatherBlockForm />}
-            <button
-            className="form-field"
-            type = "submit">Salvar</button>
+            <Button icon="plus-circle-outline" mode="contained" onPress={() => console.log('Criado')}>
+              Criar
+            </Button>
           </form>
         </View>
       </View>

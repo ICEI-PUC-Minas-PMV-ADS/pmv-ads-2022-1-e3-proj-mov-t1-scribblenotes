@@ -6,7 +6,7 @@ Aqui estão as telas propostas para o projeto. Muitas ainda estão em desenvolvi
 
 A tela de criação de tasks será utilizada para o usuário poder criar anotações personalizadas e escrever o conteúdo de acordo com a vontade do mesmo. Nessa tela, será feita a exibição do clima, assim como data, título e conteúdo.
 
-Pessoa responsável pela tela: Maykell Alvim de França
+Pessoa responsável pela tela: Maykell/Vinicius
 
 ![Tela criação task](https://user-images.githubusercontent.com/82729897/166544435-e4d7d7b9-7852-4cb7-ad92-9ec4e36cbb44.png)
 
@@ -15,16 +15,20 @@ Pessoa responsável pela tela: Maykell Alvim de França
 
 Essa é a tela principal da aplicação. Sendo ela a primeira tela que o usuário encontrará ao usar o aplicativo. Nela, o usuário terá a possibilidade de visualizar as tasks passadas assim como acessar a página de criação de tasks por meio do botão Adicionar.
 
-Pessoa responsável pela tela: 
+Pessoa responsável pela tela: Daiane/Vinicius
 
 ![Mobile home task](https://user-images.githubusercontent.com/82729897/166550239-c6064e35-ff13-491d-874f-fb43ad519d29.png)
 
 # Tela Login
 
+Tela usada para o usuário fazer login e cadastro com seu usuário.
+
+Pessoa responsável pela tela: Emerson
+
 ![Tela login](https://user-images.githubusercontent.com/82729897/167310974-391e4837-6b5a-4d32-8e8f-d1217045ddd5.png)
 
 
-# Tela Lixeira
+---
 
 
 

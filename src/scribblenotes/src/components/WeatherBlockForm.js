@@ -1,8 +1,7 @@
 import React from 'react'
 import {Picker} from '@react-native-picker/picker'
-import AppLoading from 'expo-app-loading'
 import { StyleSheet, View } from 'react-native'
-import { Text, Button, TextInput } from 'react-native-paper'
+import { Text } from 'react-native-paper'
 import api from '../services/axios'
 
 
@@ -93,11 +92,6 @@ export default function WeatherBlockForm() {
               <Picker.Item key={forecast.date} label={`${forecast.date} - ${forecast.description}`} value={forecast.date} />
             ))}
         </Picker>
-      </View>
-      <View style={{paddingVertical: 8}}>
-        <Button mode="contained" onPress={() => collectCompleteWeatherInfo()}>
-          Coletar Info da Data
-        </Button>
       </View>
     </View>
   );

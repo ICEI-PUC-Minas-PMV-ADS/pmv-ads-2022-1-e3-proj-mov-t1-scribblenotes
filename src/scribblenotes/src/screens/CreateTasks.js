@@ -10,17 +10,13 @@ import WeatherBlockForm from '../components/weatherBlockForm';
 const databse = firebase.firestore
 
 export default function CreateTasks() {
-  const [values, setValues] = useState({
-    title: "",
-    description: "",
-    date: "",
-    weather: ""
-  })
-
-
-
   const [submitted, setSubmitted] = useState(false)
+  const [cardTitle, setCardTitle] = useState('')
+  const [cardDescription, setCardDescription] = useState('')
+  const [cardDate, setCardDate] = useState('')
+
   const [valid, setValid] = useState(false)
+
 
   const [isSwitchOn, setIsSwitchOn] = React.useState(false);
 
@@ -75,9 +71,9 @@ export default function CreateTasks() {
             <Text style={{ fontSize: 16, fontWeight: 600 }}>Monitorar Clima</Text>
             <Switch value={isSwitchOn} onValueChange={onToggleSwitch} />
             {isSwitchOn && <WeatherBlockForm />}
-            <button
-              className="form-field"
-              type="submit">Salvar</button>
+            <Button icon="plus-circle-outline" mode="contained" onPress={() => console.log('Criar')}>
+              Criar
+            </Button>
           </form>
         </View>
       </View>

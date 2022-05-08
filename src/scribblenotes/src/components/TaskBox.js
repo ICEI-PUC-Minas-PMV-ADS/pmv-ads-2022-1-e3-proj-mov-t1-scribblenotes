@@ -3,7 +3,7 @@ import { useFonts, Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/
 import AppLoading from 'expo-app-loading';
 import { Card, Title, Paragraph, Avatar, Text } from 'react-native-paper';
 import { StyleSheet } from 'react-native';
-import React, {useState} from "react";
+import React from "react";
 
 export default function TaskBox(props) {
   let [fontsLoaded] = useFonts({

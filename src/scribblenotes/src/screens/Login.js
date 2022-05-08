@@ -1,6 +1,5 @@
 import { View, Text, TextInput, TouchableOpacity, KeyboardAvoidingView, StyleSheet } from 'react-native'
 import React from 'react'
-import { BottomNavigation } from 'react-native-paper'
 import firebase from '../config/firebaseConfig'
 import react, { useState, useEffect } from 'react';
 import { MaterialCommunityIcons } from '@expo/vector-icons';

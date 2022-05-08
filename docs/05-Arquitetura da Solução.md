@@ -17,10 +17,10 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de
 
 ## Modelo ER
 
-O nosso modelo ER representa o nosos usuario desdo do login ao 
+O nosso modelo ER representa o nosos usuario desdo do login ao regitro de uma tarefa.
 
 ![Modelo ER](img/modeloer.png)
-As referências abaixo irão auxiliá-lo na geração do artefato “Modelo ER”.
+
 
 > - [Como fazer um diagrama entidade relacionamento | Lucidchart](https://www.lucidchart.com/pages/pt/como-fazer-um-diagrama-entidade-relacionamento)
 

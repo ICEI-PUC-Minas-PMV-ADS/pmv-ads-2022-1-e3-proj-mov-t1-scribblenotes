@@ -3,8 +3,12 @@ import { useFonts, Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/
 import AppLoading from 'expo-app-loading';
 import { Button } from 'react-native-paper';
 import { StyleSheet } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
+
 
 export default function NewTaskButton() {
+  const navigation = useNavigation();
+
   let [fontsLoaded] = useFonts({
     Roboto_700Bold,
     Roboto_400Regular,
@@ -15,7 +19,7 @@ export default function NewTaskButton() {
   }
 
   return (
-    <Button icon="plus-circle-outline" mode="contained" style={styles.button} onPress={() => console.log('Adicionar Tarefa')}>
+    <Button icon="plus-circle-outline" mode="contained" style={styles.button} onPress={() => navigation.navigate('CreateTasks')}>
       Adicionar Tarefa
     </Button>
   );

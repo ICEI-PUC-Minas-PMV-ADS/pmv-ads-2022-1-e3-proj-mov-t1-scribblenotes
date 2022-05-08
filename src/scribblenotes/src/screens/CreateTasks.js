@@ -2,7 +2,7 @@ import { StyleSheet, View } from 'react-native';
 import { useFonts, Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/roboto';
 import AppLoading from 'expo-app-loading';
 import Layout from '../components/Layout';
-import { Text, TextInput, Switch } from 'react-native-paper';
+import { Text, TextInput, Switch, Button } from 'react-native-paper';
 import React, { useState } from 'react';
 import firebase from '../config/firebaseConfig'
 
@@ -44,6 +44,10 @@ export default function CreateTasks() {
 
   if (!fontsLoaded) {
     return <AppLoading />;
+  }
+
+  const createTask = () => {
+    
   }
 
   return (

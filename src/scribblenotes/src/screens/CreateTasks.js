@@ -5,6 +5,7 @@ import Layout from '../components/Layout';
 import { Text, TextInput, Switch, Button } from 'react-native-paper';
 import React, { useState } from 'react';
 import firebase from '../config/firebaseConfig'
+import WeatherBlockForm from '../components/weatherBlockForm';
 
 const databse = firebase.firestore
 
@@ -17,9 +18,6 @@ export default function CreateTasks() {
   })
 
 
-  const [cardTitle, setCardTitle] = React.useState("")
-  const [cardDescription, setCardDescription] = React.useState("")
-  const [cardDate, setCardDate] = React.useState("")
 
   const [submitted, setSubmitted] = useState(false)
   const [valid, setValid] = useState(false)
@@ -47,7 +45,7 @@ export default function CreateTasks() {
   }
 
   const createTask = () => {
-    
+
   }
 
   return (

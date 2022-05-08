@@ -6,7 +6,7 @@ import firebase from '../config/firebaseConfig'
 export default function Register() {
   return (
     <View>
-      <Text>PUTA QUE PARIU IMRÃO Registro</Text>
+      <Text></Text>
     </View>
   );
 }

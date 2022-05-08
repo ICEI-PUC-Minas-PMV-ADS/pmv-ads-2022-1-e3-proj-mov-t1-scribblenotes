@@ -4,7 +4,9 @@ import AppLoading from 'expo-app-loading';
 import Layout from '../components/Layout';
 import { Text, TextInput, Switch } from 'react-native-paper';
 import React, { useState } from 'react';
-import WeatherBlockForm from '../components/weatherBlockForm';
+import firebase from '../config/firebaseConfig'
+
+const databse = firebase.firestore
 
 export default function CreateTasks() {
   const [values, setValues] = useState({
@@ -15,9 +17,9 @@ export default function CreateTasks() {
   })
 
 
-  const [ cardTitle, setCardTitle ] = React.useState("")
-  const [ cardDescription, setCardDescription ] = React.useState("")
-  const [ cardDate, setCardDate ] = React.useState("")
+  const [cardTitle, setCardTitle] = React.useState("")
+  const [cardDescription, setCardDescription] = React.useState("")
+  const [cardDate, setCardDate] = React.useState("")
 
   const [submitted, setSubmitted] = useState(false)
   const [valid, setValid] = useState(false)
@@ -48,7 +50,7 @@ export default function CreateTasks() {
     <Layout subtitle='Criar Tarefa'>
       <View style={styles.body}>
         <View className="form-container">
-          <form className = "add-task-form" onSubmit={handleSubmit}>
+          <form className="add-task-form" onSubmit={handleSubmit}>
             <TextInput
               style={styles.picker}
               label="Titulo"
@@ -68,12 +70,12 @@ export default function CreateTasks() {
               value={cardDate}
               onChangeText={cardDate => setCardDate(cardDate)}
             />
-            <Text style={{fontSize: 16, fontWeight: 600}}>Monitorar Clima</Text>
+            <Text style={{ fontSize: 16, fontWeight: 600 }}>Monitorar Clima</Text>
             <Switch value={isSwitchOn} onValueChange={onToggleSwitch} />
-            {isSwitchOn &&  <WeatherBlockForm />}
+            {isSwitchOn && <WeatherBlockForm />}
             <button
-            className="form-field"
-            type = "submit">Salvar</button>
+              className="form-field"
+              type="submit">Salvar</button>
           </form>
         </View>
       </View>

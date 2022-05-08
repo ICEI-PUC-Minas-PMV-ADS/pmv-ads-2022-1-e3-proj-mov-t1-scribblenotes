@@ -4,6 +4,9 @@ import AppLoading from 'expo-app-loading';
 import NewTaskButton from '../components/NewTaskButton';
 import Layout from '../components/Layout';
 import ScrollTask from '../components/Scroll';
+import firebase from '../config/firebaseConfig'
+
+const databse = firebase.firestore
 
 export default function App() {
   let [fontsLoaded] = useFonts({

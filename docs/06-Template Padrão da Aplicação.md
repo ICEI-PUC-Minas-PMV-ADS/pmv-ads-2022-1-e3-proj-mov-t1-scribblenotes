@@ -4,7 +4,18 @@
 
 Layout padrão da aplicação que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
 
-**Logo abaixo mostra-se os protótipos de tela propostos para a aplicação**
+**Template Padrão da Aplicação**
+
+Cada tela foi inicialmente planejada para apresentar um design prático, eficiente e que fosse de fácil entendimento tanto para usuários novatos quanto experientes. 
+
+Logo abaixo mostra-se os protótipos das telas home page, home page após ter adicionado tasks, tela de adicionar tasks e login propostos na interface de usuário para a aplicação:
+
+
+![Tela totalis](https://user-images.githubusercontent.com/82729897/167310322-284e8b07-327d-4061-974c-bb83ce53a28e.png)
+
+---
+
+
 
 > **Links Úteis**:
 >

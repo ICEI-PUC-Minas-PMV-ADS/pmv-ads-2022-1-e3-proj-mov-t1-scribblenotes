@@ -25,11 +25,11 @@ Pessoa responsável pela tela: Daiane/Vinicius
 
 ![Mobile home task](https://user-images.githubusercontent.com/82729897/166550239-c6064e35-ff13-491d-874f-fb43ad519d29.png)
 
-# Tela Login
+# Tela Login e Registro
 
-Tela usada para o usuário fazer login e cadastro com seu usuário.
+Telas usadas para o usuário fazer login e cadastro com seu usuário.
 
-Pessoa responsável pela tela: Emerson
+Pessoa responsável pelas telas: Emerson
 
 ![Tela login](https://user-images.githubusercontent.com/82729897/167310974-391e4837-6b5a-4d32-8e8f-d1217045ddd5.png)
 

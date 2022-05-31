@@ -10,6 +10,12 @@ Pessoa responsável pela tela: Maykell/Vinicius
 
 ![Tela criação task](https://user-images.githubusercontent.com/82729897/166544435-e4d7d7b9-7852-4cb7-ad92-9ec4e36cbb44.png)
 
+# Especificação das tasks
+
+Essa tela será usada para mostrar ao usuário os detalhes, informações adicionais e customizáveis de acordo com a personalização das anotações feita pelo usuário.
+
+Pessoa responsável pela tela: Gabriel
+
 
 # Tela Mobile Home
 

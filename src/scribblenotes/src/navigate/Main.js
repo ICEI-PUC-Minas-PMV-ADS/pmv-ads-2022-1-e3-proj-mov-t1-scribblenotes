@@ -3,15 +3,17 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import Home from '../screens/Home';
 import CreateTasks from '../screens/CreateTasks';
+import Login from '../screens/Login'
+import Register from '../screens/Register'
 
 const Stack = createNativeStackNavigator();
 
 const Main = () => {
   return (
-    <Stack.Navigator initialRouteName="Home">
+    <Stack.Navigator initialRouteName="Login">
       <Stack.Screen
-        name="Home"
-        component={Home}
+        name="Login"
+        component={Login}
         options={{
           header: () => null,
         }}
@@ -23,6 +25,18 @@ const Main = () => {
           header: () => null,
         }}
       />
+      <Stack.Screen
+        name="Home"
+        component={Home}
+        options={{
+          header: () => null,
+        }}/>
+        <Stack.Screen
+        name="Register"
+        component={Register}
+        options={{
+          header: () => null,
+        }}/>
     </Stack.Navigator>
   );
 };

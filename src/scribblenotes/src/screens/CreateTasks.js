@@ -4,10 +4,10 @@ import AppLoading from 'expo-app-loading';
 import Layout from '../components/Layout';
 import { Text, TextInput, Switch, Button } from 'react-native-paper';
 import React, { useState } from 'react';
-import firebase from '../config/firebaseConfig'
 import WeatherBlockForm from '../components/weatherBlockForm';
+import firebase from '../config/firebaseConfig'
 
-const databse = firebase.firestore
+const database = firebase.firestore();
 
 export default function CreateTasks() {
   const [submitted, setSubmitted] = useState(false)

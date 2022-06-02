@@ -5,7 +5,6 @@ import Tasks from '../screens/Tasks';
 import CreateTasks from '../screens/CreateTasks';
 import Clima from '../screens/Clima';
 import Contacts from '../screens/Contacts';
-import LoginScreen from '../screens/Login'
 import RegisterScreen from '../screens/Register'
 
 export default function Bottom() {
@@ -16,7 +15,6 @@ export default function Bottom() {
         { key: 'create', title: 'Criar Tarefa', icon: 'plus-circle-outline' },
         { key: 'clima', title: 'Clima', icon: 'weather-cloudy' },
         { key: 'contacts', title: 'Contato', icon: 'contacts' },
-        { key: 'login', title: 'Login', icon: 'login' },
         { key: 'register', title: 'Registro', icon: 'account-plus' }
     ]);
 
@@ -25,7 +23,6 @@ export default function Bottom() {
         create: CreateTasks,
         clima: Clima,
         contacts: Contacts,
-        login: LoginScreen,
         register: RegisterScreen,
     });
 

@@ -1,13 +1,12 @@
 import firebase from "firebase";
 import 'firebase/storage'
 const firebaseConfig = {
-  apiKey: "AIzaSyAsJ8UD8SAApD1lM6DNyZGu5FKeY8FLzG4",
-  authDomain: "scribblenotes-51777.firebaseapp.com",
-  projectId: "scribblenotes-51777",
-  storageBucket: "scribblenotes-51777.appspot.com",
-  messagingSenderId: "399336557814",
-  appId: "1:399336557814:web:9aa55b6986bc2152b7f0d7",
-  measurementId: "G-PB273ZBPWD"
+  apiKey: "AIzaSyCNEA9kqGpU17QfmWzXcBcQ31Z-2K6Vfj0",
+  authDomain: "scriblenotes-7bee9.firebaseapp.com",
+  projectId: "scriblenotes-7bee9",
+  storageBucket: "scriblenotes-7bee9.appspot.com",
+  messagingSenderId: "466099037320",
+  appId: "1:466099037320:web:29cb12dcfb2eaf6b1e2b3d"
 };
 
 // Initialize Firebase

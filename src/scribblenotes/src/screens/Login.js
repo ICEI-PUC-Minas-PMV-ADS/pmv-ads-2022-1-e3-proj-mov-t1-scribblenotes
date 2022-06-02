@@ -1,27 +1,36 @@
-import { View, Text, TextInput, TouchableOpacity, KeyboardAvoidingView, StyleSheet } from 'react-native'
+import { View, Text, TextInput, TouchableOpacity, KeyboardAvoidingView, StyleSheet, Button } from 'react-native'
 import React from 'react'
 import firebase from '../config/firebaseConfig'
 import react, { useState, useEffect } from 'react';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { Platform } from 'react-native';
+import Register from '../screens/Register'
+import { useNavigation } from '@react-navigation/native';
 
+
+const database = firebase.firestore();
 
 export default function Login({ Navigation }) {
+  const navigation = useNavigation()
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errorLogin, setErrorLogin] = useState("");
+  
 
   const loginFirebase = () => {
     firebase.auth().signInWithEmailAndPassword(email, password)
       .then((userCredential) => {
         // Signed in
         var user = userCredential.user;
+        navigation.navigate("Home")
+        
         // ...
       })
       .catch((error) => {
         setErrorLogin(true)
         var errorCode = error.code;
         var errorMessage = error.message;
+        console.log("error")
       });
   }
   useEffect(() => {
@@ -74,16 +83,18 @@ export default function Login({ Navigation }) {
         :
         <TouchableOpacity
           style={styles.buttonLogin}
+          onPress={loginFirebase}
+
         >
           <Text style={styles.textButtonLogin}>Entrar</Text>
         </TouchableOpacity>
       }
       <Text style={styles.registration}>Não tem uma conta?
-        <Text
+        <Button
           style={styles.linkSubscribe}
-          onPress={() => navigation.navigate("Registrar")}>
+          onPress={() => navigation.navigate("Register")}>
           Registre-se Agora
-        </Text>
+        </Button>
       </Text>
       <View style={{ height: 100, }} />
     </KeyboardAvoidingView >

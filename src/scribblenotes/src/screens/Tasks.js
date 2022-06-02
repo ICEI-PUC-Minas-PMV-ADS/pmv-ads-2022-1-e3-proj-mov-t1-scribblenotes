@@ -6,7 +6,7 @@ import Layout from '../components/Layout';
 import ScrollTask from '../components/Scroll';
 import firebase from '../config/firebaseConfig'
 
-const databse = firebase.firestore
+const database = firebase.firestore();
 
 export default function App() {
   let [fontsLoaded] = useFonts({

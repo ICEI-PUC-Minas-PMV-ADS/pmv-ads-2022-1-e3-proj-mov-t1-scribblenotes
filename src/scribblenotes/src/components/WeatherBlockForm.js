@@ -14,7 +14,7 @@ export default function WeatherBlockForm() {
   }, [selectedCity])
 
   const callAPI = () => {
-    api.get(`/weather?format=json-cors&key=3660b20c&city_name=${selectedCity}/`).then(({data}) => {
+    api.get(`/weather?format=json-cors&key=28224eee&city_name=${selectedCity}/`).then(({data}) => {
       console.log(data.results)
       const { results } = data
 

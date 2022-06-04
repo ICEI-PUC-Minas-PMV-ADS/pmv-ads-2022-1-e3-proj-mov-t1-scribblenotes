@@ -6,7 +6,8 @@ import Layout from '../components/Layout';
 import Header from '../components/Header';
 import Bottom from '../components/Bottom';
 import { Text } from 'react-native-paper';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { deleteTask, getTask, insertTask, updateTask } from '../database/WeatherServicesDB';
 
 export default function CreateTasks() {
   let [fontsLoaded] = useFonts({
@@ -14,9 +15,31 @@ export default function CreateTasks() {
     Roboto_400Regular,
   });
 
-  if (!fontsLoaded) {
+  const [data, setData] = useState([]);
+
+  useEffect(()=>{
+    
+    getTask().then((value) => { 
+      console.log(value);
+    });
+    
+    // insertTask({description: "TESTE INSERT DESCRICAO", titulo: "TESTE INSERT DESCRICAO", data: "2022-06-03 21:24:00.000", status: true}).then((value) => { 
+    //   console.log(value);
+    // });
+      
+    // updateTask({description: "descricao alterada", titulo: "titulo alterado", data: "2022-06-03 21:30:00.000", status: true, id: 10}).then((value) => {
+    //   console.log(value);
+    // })
+    
+    // deleteTask(10).then((value) => {
+    //   console.log(value)
+    // })
+          
+  },[])
+          if (!fontsLoaded) {
     return <AppLoading />;
   }
+
 
   return (
     <Layout subtitle='Criar Tarefa'>

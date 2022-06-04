@@ -4,7 +4,7 @@ import AppLoading from 'expo-app-loading';
 import Layout from '../components/Layout';
 import { Text, TextInput, Switch, Button } from 'react-native-paper';
 import React, { useState } from 'react';
-import WeatherBlockForm from '../components/weatherBlockForm';
+import WeatherBlockForm from '../components/WeatherBlockForm';
 import firebase from '../config/firebaseConfig'
 
 const database = firebase.firestore();

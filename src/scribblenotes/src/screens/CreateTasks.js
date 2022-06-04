@@ -7,7 +7,7 @@ import Header from '../components/Header';
 import Bottom from '../components/Bottom';
 import { Text } from 'react-native-paper';
 import React, { useState, useEffect } from 'react';
-import { deleteTask, getTask, insertTask, updateTask } from '../database/WeatherServicesDB';
+import { deleteTask, getTask, insertTask, updateTask } from '../database/TaskServicesDB';
 
 export default function CreateTasks() {
   let [fontsLoaded] = useFonts({

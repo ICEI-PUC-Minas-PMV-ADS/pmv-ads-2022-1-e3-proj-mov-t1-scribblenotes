@@ -3,7 +3,7 @@ import AppLoading from 'expo-app-loading';
 
 import { Appbar } from 'react-native-paper';
 
-export default function Header({subtitle}) {
+const Header = ({ subtitle, goBack }) => {
   let [fontsLoaded] = useFonts({
     Roboto_700Bold,
     Roboto_400Regular,
@@ -21,9 +21,11 @@ export default function Header({subtitle}) {
 
   return (
     <Appbar.Header>
+      {goBack && <Appbar.BackAction onPress={goBack} />}
       <Appbar.Content title="Scriblenotes" subtitle={subtitle} />
       <Appbar.Action icon="dots-vertical" onPress={_handleMore} />
     </Appbar.Header>
   );
 }
 
+export default Header

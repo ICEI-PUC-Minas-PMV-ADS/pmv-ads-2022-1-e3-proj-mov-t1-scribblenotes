@@ -4,9 +4,8 @@ import { Button } from 'react-native-paper';
 import { StyleSheet } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
-
-export default function NewTaskButton() {
-  const navigation = useNavigation();
+const NewTaskButton = () => {
+  const navigation = useNavigation()
 
   let [fontsLoaded] = useFonts({
     Roboto_700Bold,
@@ -14,7 +13,7 @@ export default function NewTaskButton() {
   });
 
   if (!fontsLoaded) {
-    return <AppLoading />;
+    return <AppLoading />
   }
 
   return (
@@ -29,3 +28,5 @@ const styles = StyleSheet.create({
     marginVertical: 16,
   },
 });
+
+export default NewTaskButton

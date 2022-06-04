@@ -5,7 +5,7 @@ import { Card, Title, Paragraph, Avatar, Text } from 'react-native-paper';
 import { StyleSheet } from 'react-native';
 import React from "react";
 
-export default function TaskBox(props) {
+const TaskBox = ({ task }) => {
   let [fontsLoaded] = useFonts({
     Roboto_700Bold,
     Roboto_400Regular,
@@ -18,13 +18,13 @@ export default function TaskBox(props) {
   return (
     <Card style={styles.card}>
       <Card.Content>
-        <Title>{props.task.titulo}</Title>
-        <Text>{props.task.id}</Text>
-        <View style={{display: 'flex', flexDirection: 'row', marginVertical: 12}}>
-          <Avatar.Icon size={24} icon="calendar" style={{marginRight: 12}} />
-          <Paragraph>{props.task.data}</Paragraph>
+        <Title>{task.titulo}</Title>
+        <Text>{task.id}</Text>
+        <View style={{ display: 'flex', flexDirection: 'row', marginVertical: 12 }}>
+          <Avatar.Icon size={24} icon="calendar" style={{ marginRight: 12 }} />
+          <Paragraph>{task.data}</Paragraph>
         </View>
-        <Paragraph>{props.task.texto}</Paragraph>
+        <Paragraph>{task.texto}</Paragraph>
       </Card.Content>
     </Card>
   );
@@ -36,3 +36,5 @@ const styles = StyleSheet.create({
     borderWidth: 3,
   },
 });
+
+export default TaskBox

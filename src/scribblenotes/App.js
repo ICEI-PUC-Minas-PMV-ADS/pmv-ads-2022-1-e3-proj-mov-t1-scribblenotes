@@ -1,17 +1,10 @@
-import React, { useState } from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { StyleSheet, View } from 'react-native';
+import React from 'react';
 import { useFonts, Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/roboto';
 import AppLoading from 'expo-app-loading';
-import TaskBox from './src/components/TaskBox';
-import NewTaskButton from './src/components/NewTaskButton';
-import Layout from './src/components/Layout';
-import Header from './src/components/Header';
-import Main from './src/navigate/Main';
-import { DefaultTheme, Provider as PaperProvider } from 'react-native-paper';
-import { blue } from './src/styles/colors';
+import { NavigationContainer } from '@react-navigation/native';
+import Main from './src/navigations/Main';
 
-export default function App() {
+const App = () => {
   let [fontsLoaded] = useFonts({
     Roboto_700Bold,
     Roboto_400Regular,
@@ -22,21 +15,10 @@ export default function App() {
   }
 
   return (
-    <PaperProvider theme={theme}>
-      <NavigationContainer>
-     <Main />
-    </NavigationContainer>
-    </PaperProvider>
+    <NavigationContainer>
+      <Main />
+    </NavigationContainer >
   );
 }
 
-
-const theme = {
-  ...DefaultTheme,
-  colors: {
-    ...DefaultTheme.colors,
-    primary: blue[500],
-    accent: 'yellow',
-    background: blue[300],
-  },
-};
+export default App

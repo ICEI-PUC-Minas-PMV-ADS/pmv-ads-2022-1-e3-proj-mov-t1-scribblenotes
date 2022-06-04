@@ -6,29 +6,26 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { Platform } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
-
-
 const database = firebase.firestore();
 
-export default function Register({ Navigation }) {
+const Register = () => {
   const navigation = useNavigation()
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errorLogin, setErrorLogin] = useState("");
-  
-  
-const registerFirebase = () =>{
-  firebase.auth().createUserWithEmailAndPassword(email, password)
-  .then((userCredential) => {
-    // Signed in
-    var user = userCredential.user;
-    // ...
-  })
-  .catch((error) => {
-    var errorCode = error.code;
-    var errorMessage = error.message;
-    // ..
-  });
+
+  const registerFirebase = () => {
+    firebase.auth().createUserWithEmailAndPassword(email, password)
+      .then((userCredential) => {
+        // Signed in
+        var user = userCredential.user;
+        // ...
+      })
+      .catch((error) => {
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        // ..
+      });
 
   }
   useEffect(() => {
@@ -39,7 +36,7 @@ const registerFirebase = () =>{
       behavior={Platform.OS === "ios" ? "padding" : "height"}
       style={styles.container}
     >
-      <Text style={styles.title}>Scribble Notes</Text>
+      <Text style={styles.title}>Scribblenotes</Text>
       <TextInput
         style={styles.input}
         placeholder={"Entre com seu email"}
@@ -76,7 +73,7 @@ const registerFirebase = () =>{
           style={styles.buttonLogin}
           onPress={registerFirebase}
         >
-          <Text style={styles.textButtonLogin}>Entrar</Text>
+          <Text style={styles.textButtonLogin}>Registrar</Text>
         </TouchableOpacity>
         :
         <TouchableOpacity
@@ -84,16 +81,9 @@ const registerFirebase = () =>{
           onPress={registerFirebase}
 
         >
-          <Text style={styles.textButtonLogin}>Entrar</Text>
+          <Text style={styles.textButtonLogin}>Registrar</Text>
         </TouchableOpacity>
       }
-      <Text style={styles.registration}>Não tem uma conta?
-        <Text
-          style={styles.linkSubscribe}
-          onPress={() => navigation.navigate('Register')}>
-          Registre-se Agora
-        </Text>
-      </Text>
       <View style={{ height: 100, }} />
     </KeyboardAvoidingView >
   );
@@ -163,3 +153,5 @@ const styles = StyleSheet.create({
 
   }
 });
+
+export default Register

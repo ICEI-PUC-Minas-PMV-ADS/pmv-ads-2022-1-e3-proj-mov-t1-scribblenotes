@@ -1,29 +1,26 @@
+import { StyleSheet, View } from 'react-native';
 import { DefaultTheme, Provider as PaperProvider } from 'react-native-paper';
 import { useFonts, Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/roboto';
 import AppLoading from 'expo-app-loading';
-import { blue } from '../styles/colors';
-import Header from './Header';
+import { blue } from '../../styles/colors';
+import Header from '../Header';
 
-export default function Layout({children, subtitle}) {
+const Layout = ({ children, subtitle, goBack }) => {
   let [fontsLoaded] = useFonts({
     Roboto_700Bold,
     Roboto_400Regular,
   });
 
-  const _goBack = () => console.log('Went back');
-
-  const _handleSearch = () => console.log('Searching');
-
-  const _handleMore = () => console.log('Shown more');
-
   if (!fontsLoaded) {
-    return <AppLoading />;
+    return <AppLoading />
   }
 
   return (
     <PaperProvider theme={theme}>
-      <Header subtitle={subtitle} />
-      {children}
+      <Header subtitle={subtitle} goBack={goBack} />
+      <View style={styles.body}>
+        {children}
+      </View>
     </PaperProvider>
   );
 }
@@ -38,3 +35,10 @@ const theme = {
   },
 };
 
+const styles = StyleSheet.create({
+  body: {
+    marginHorizontal: 8,
+  }
+});
+
+export default Layout

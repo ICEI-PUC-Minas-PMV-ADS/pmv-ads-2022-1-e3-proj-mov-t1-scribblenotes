@@ -4,7 +4,7 @@ O teste de usabilidade permite avaliar a qualidade da interface com o usuário d
 
 ## Como será feito
 
-Os participantes selecionados para efetuar o teste baixarão o aplicativo diretamente de seus aparelhos, sendo este um computador ou um dispositivo móvel e será coletado o feedback individualmente de cada um, suas opiniões sobre o funcionamento da aplicação e o que poderia ser melhorado.
+Os participantes selecionados para efetuar o teste deverão baixar o aplicativo diretamente de seus aparelhos, sendo este um computador ou um dispositivo móvel e será coletado o feedback individualmente de cada um, suas opiniões sobre o funcionamento da aplicação e o que poderia ser melhorado.
 
 ## Objetivo do teste
 

@@ -22,6 +22,7 @@
     "expo-constants": "~12.1.3",
     "expo-font": "~10.0.4",
     "expo-status-bar": "~1.2.0",
+    "expo-sqlite": "~10.1.0",
     "firebase": "^8.10.1",
     "moment": "*",
     "parse-json": "^6.0.2",

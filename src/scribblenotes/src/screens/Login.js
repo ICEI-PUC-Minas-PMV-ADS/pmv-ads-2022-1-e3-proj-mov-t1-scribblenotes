@@ -1,37 +1,26 @@
 import { View, Text, TextInput, TouchableOpacity, KeyboardAvoidingView, StyleSheet, Button } from 'react-native'
-import React from 'react'
-import firebase from '../config/firebaseConfig'
-import react, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { Platform } from 'react-native';
-import Register from '../screens/Register'
 import { useNavigation } from '@react-navigation/native';
-
-
-const database = firebase.firestore();
+import { getUser } from '../database/UserServices';
+import { useUser } from '../context/userContext'
 
 export default function Login({ Navigation }) {
   const navigation = useNavigation()
-  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("");
   const [errorLogin, setErrorLogin] = useState("");
-  
+  const {setId} = useUser();
 
-  const loginFirebase = () => {
-    firebase.auth().signInWithEmailAndPassword(email, password)
-      .then((userCredential) => {
-        // Signed in
-        var user = userCredential.user;
-        navigation.navigate("Home")
-        
-        // ...
-      })
-      .catch((error) => {
-        setErrorLogin(true)
-        var errorCode = error.code;
-        var errorMessage = error.message;
-        console.log("error")
-      });
+
+  const loginFirebase = async() => {
+    const user = await getUser(email, password)
+    setId(user.id)
+    if(user.id!== null && user.id > 0)
+      navigation.navigate('Home')
+    else
+      errorLogin = true
   }
   useEffect(() => {
 
@@ -91,8 +80,9 @@ export default function Login({ Navigation }) {
       }
       <Text style={styles.registration}>Não tem uma conta?
         <Button
+        title='Registre-se Agora'
           style={styles.linkSubscribe}
-          onPress={() => navigation.navigate("Register")}>
+          onPress={() => navigation.navigate("Home")}>
           Registre-se Agora
         </Button>
       </Text>

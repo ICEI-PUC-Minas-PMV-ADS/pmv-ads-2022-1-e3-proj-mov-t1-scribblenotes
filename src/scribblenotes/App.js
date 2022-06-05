@@ -7,6 +7,7 @@ import TaskBox from './src/components/TaskBox';
 import NewTaskButton from './src/components/NewTaskButton';
 import Layout from './src/components/Layout';
 import Header from './src/components/Header';
+import UserProvider from './src/context/userContext'
 import Main from './src/navigate/Main';
 import { DefaultTheme, Provider as PaperProvider } from 'react-native-paper';
 import { blue } from './src/styles/colors';
@@ -24,7 +25,9 @@ export default function App() {
   return (
     <PaperProvider theme={theme}>
       <NavigationContainer>
-     <Main />
+    <UserProvider>
+       <Main />
+    </UserProvider>
     </NavigationContainer>
     </PaperProvider>
   );

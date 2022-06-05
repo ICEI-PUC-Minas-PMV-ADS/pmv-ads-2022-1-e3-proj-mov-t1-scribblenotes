@@ -1,14 +1,11 @@
-import { StyleSheet, View } from 'react-native';
 import { useFonts, Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/roboto';
 import AppLoading from 'expo-app-loading';
 import NewTaskButton from '../components/NewTaskButton';
-import Layout from '../components/Layout';
+import Layout from '../components/layout/Layout';
 import ScrollTask from '../components/Scroll';
-import firebase from '../config/firebaseConfig'
 
-const database = firebase.firestore();
 
-export default function App() {
+const Tasks = () => {
   let [fontsLoaded] = useFonts({
     Roboto_700Bold,
     Roboto_400Regular,
@@ -20,18 +17,10 @@ export default function App() {
 
   return (
     <Layout subtitle='Home'>
-      <View style={styles.body}>
-        <NewTaskButton />
-        <ScrollTask />
-      </View>
-
+      <NewTaskButton />
+      <ScrollTask />
     </Layout>
   );
 }
 
-
-const styles = StyleSheet.create({
-  body: {
-    marginHorizontal: 8,
-  }
-});
+export default Tasks

@@ -1,28 +1,37 @@
 import * as React from 'react';
 import { FlatList } from 'react-native';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import TaskBox from '../components/TaskBox';
+import { useUser } from '../context/userContext'
+import { getUsersTasks } from '../database/TaskServices';
 
-export default function Scroll() {
-    function buscaValoresDoBanco() {
-        let values = []
-        for (let i = 0; i < 10; i++) {
-            values.push({ id: i+1, titulo: "Lorem Ipsulum Dolor", data: i + "/04/1999", texto: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium" + i })
-        }
+export default function ScrollTask() {
+    const { id } = useUser();
+    const [isLoaded, setIsLoaded] = useState(false);
+    async function buscaValoresDoBanco() {
+        const values = await getUsersTasks(id)
+        setIsLoaded(true)
         return values
-    }/*Função de exemplo para ver o scroll até a criação do banco de dados*/
-    const [tasks] = useState(buscaValoresDoBanco());
+    }
+    const [tasks] = buscaValoresDoBanco();
 
-    return (
+    {
+        if (isLoaded) {
 
-            <FlatList
+            return (<View>Tem tarefas</View>)
+            /**
+             * <FlatList
                 data={tasks}
                 renderItem={({ item }) => (
                     <TaskBox key={item.id} task={item} />
                 )}
                 keyExtractor={(item) => item.id}
             />
-    );
+             */
+        } else {
+            return (<View>Sem tarefas hoje</View>)
+        }
+    }
 
 
 

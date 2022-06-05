@@ -1,7 +1,7 @@
 import { useFonts, Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/roboto';
 import AppLoading from 'expo-app-loading';
 import NewTaskButton from '../components/NewTaskButton';
-import Layout from '../components/layout/Layout';
+import Layout from '../components/Layout';
 import ScrollTask from '../components/Scroll';
 
 

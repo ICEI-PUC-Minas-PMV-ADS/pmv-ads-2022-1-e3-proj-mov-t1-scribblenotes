@@ -1,12 +1,7 @@
 import React, { useState } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { StyleSheet, View } from 'react-native';
 import { useFonts, Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/roboto';
 import AppLoading from 'expo-app-loading';
-import TaskBox from './src/components/TaskBox';
-import NewTaskButton from './src/components/NewTaskButton';
-import Layout from './src/components/Layout';
-import Header from './src/components/Header';
 import UserProvider from './src/context/userContext'
 import Main from './src/navigate/Main';
 import { DefaultTheme, Provider as PaperProvider } from 'react-native-paper';
@@ -25,11 +20,12 @@ export default function App() {
   return (
     <PaperProvider theme={theme}>
       <NavigationContainer>
-    <UserProvider>
+      <UserProvider>
        <Main />
-    </UserProvider>
+       </UserProvider>
     </NavigationContainer>
     </PaperProvider>
+
   );
 }
 

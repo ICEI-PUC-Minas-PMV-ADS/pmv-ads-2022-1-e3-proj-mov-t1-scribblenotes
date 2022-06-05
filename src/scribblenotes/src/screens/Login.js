@@ -11,16 +11,16 @@ export default function Login({ Navigation }) {
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
   const [errorLogin, setErrorLogin] = useState("");
-  const {setId} = useUser();
+  const {id, setId} = useUser();
 
 
   const loginFirebase = async() => {
     const user = await getUser(email, password)
-    setId(user.id)
+    setId(1)
     if(user.id!== null && user.id > 0)
       navigation.navigate('Home')
     else
-      errorLogin = true
+      setErrorLogin(true)
   }
   useEffect(() => {
 

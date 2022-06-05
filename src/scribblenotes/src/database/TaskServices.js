@@ -3,7 +3,7 @@ import { Database } from "./DbServices";
 const DB_EXEC = Database.getConnection();
 
 export const getUsersTasks = async (userId) => {
-    let results = await DB_EXEC('SELECT * FROM task t JOIN users u ON t.id_user=u.id where t.id_user=?', [userId]);
+    let results = await DB_EXEC('SELECT t.* FROM task t JOIN users u ON t.id_user=u.id where t.id_user=?', [userId]);
     return results.rows._array;
 }
 
@@ -13,8 +13,9 @@ export const getTaskById = async (taskId) => {
 }
 
 export const insertTask = async (userId, param) => {
-    let results = await DB_EXEC('INSERT into task (user_id, description, titulo, data, status) values (?,?,?,?,?)',
-        [param.description, userId, param.titulo, param.data, param.status]);
+    console.log(param)
+    const sql = 'INSERT into task (id_user, description, titulo, data, status, clima) values ('+userId+',"'+param.description+'","'+param.titulo+'","'+param.data+'",'+param.status+',"'+param.clima+'")';
+    const results = await DB_EXEC(sql);
     return results.rowsAffected;
 }
 

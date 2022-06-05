@@ -11,7 +11,6 @@ const Home = () => {
   const [index, setIndex] = React.useState(0)
 
   const [routes] = React.useState([
-    { key: 'login', title: 'Login', icon: 'plus-circle-outline' },
     { key: 'home', title: 'Tasks', icon: 'home-circle' },
     { key: 'create', title: 'Criar Tarefa', icon: 'plus-circle-outline' },
     { key: 'contacts', title: 'Contato', icon: 'contacts' },
@@ -19,7 +18,6 @@ const Home = () => {
   ])
 
   const renderScene = BottomNavigation.SceneMap({
-    login: Login,
     home: Tasks,
     create: CreateTasks,
     contacts: Contacts,

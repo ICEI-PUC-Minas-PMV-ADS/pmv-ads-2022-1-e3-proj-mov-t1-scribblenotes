@@ -5,11 +5,14 @@ import Layout from '../components/Layout';
 import { Text, TextInput, Switch, Button } from 'react-native-paper';
 import React, { useState } from 'react';
 import WeatherBlockForm from '../components/WeatherBlockForm';
-import firebase from '../config/firebaseConfig'
-
-const database = firebase.firestore();
+import { useNavigation } from '@react-navigation/native';
+import { useUser } from '../context/userContext'
+import { insertTask } from '../database/TaskServices';
 
 export default function CreateTasks() {
+  const { id } = useUser();
+  const navigation = useNavigation()
+
   const [submitted, setSubmitted] = useState(false)
   const [cardTitle, setCardTitle] = useState('')
   const [cardDescription, setCardDescription] = useState('')
@@ -40,15 +43,20 @@ export default function CreateTasks() {
     return <AppLoading />;
   }
 
-  const createTask = () => {
-
+  const mountTask = () => {
+    return {
+      description:cardDescription ,
+      titulo: cardTitle,
+      data: new Date(cardDate),
+      status: 1,
+      clima: 'sol'
+    }
   }
 
   return (
     <Layout subtitle='Criar Tarefa'>
       <View style={styles.body}>
         <View className="form-container">
-          <form className="add-task-form" onSubmit={handleSubmit}>
             <TextInput
               style={styles.picker}
               label="Titulo"
@@ -68,13 +76,12 @@ export default function CreateTasks() {
               value={cardDate}
               onChangeText={cardDate => setCardDate(cardDate)}
             />
-            <Text style={{ fontSize: 16, fontWeight: 600 }}>Monitorar Clima</Text>
+            <Text style={{ fontSize: 16, fontWeight: "bold" }}>Monitorar Clima</Text>
             <Switch value={isSwitchOn} onValueChange={onToggleSwitch} />
             {isSwitchOn && <WeatherBlockForm />}
-            <Button icon="plus-circle-outline" mode="contained" onPress={() => console.log('Criar')}>
+            <Button icon="plus-circle-outline" mode="contained" onPress={() => insertTask(id, mountTask()).then( navigation.navigate('Home'))}>
               Criar
             </Button>
-          </form>
         </View>
       </View>
     </Layout>

@@ -19,12 +19,15 @@ export default function TaskBox(props) {
     <Card style={styles.card}>
       <Card.Content>
         <Title>{props.task.titulo}</Title>
+        <Text>{props.task.id_user}</Text>
         <Text>{props.task.id}</Text>
+
         <View style={{display: 'flex', flexDirection: 'row', marginVertical: 12}}>
           <Avatar.Icon size={24} icon="calendar" style={{marginRight: 12}} />
           <Paragraph>{props.task.data}</Paragraph>
         </View>
-        <Paragraph>{props.task.texto}</Paragraph>
+        <Paragraph>{props.task.description}</Paragraph>
+        <Text>{props.task.clima}</Text>
       </Card.Content>
     </Card>
   );

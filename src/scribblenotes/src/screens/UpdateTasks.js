@@ -4,26 +4,23 @@ import AppLoading from 'expo-app-loading';
 import Layout from '../components/Layout';
 import { Text, TextInput, Switch, Button } from 'react-native-paper';
 import React, { useState } from 'react';
-import WeatherBlockForm from '../components/WeatherBlockForm';
 import { useNavigation } from '@react-navigation/native';
+import { updateTask } from '../database/TaskServices';
+import { deleteTask } from '../database/TaskServices';
 import { useUser } from '../context/userContext'
-import { insertTask } from '../database/TaskServices';
 
-export default function CreateTasks() {
-  const { id, setAtualizar } = useUser();
+
+export default function UpdateTasks() {
   const navigation = useNavigation()
+  const { task, setAtualizar } = useUser();
 
   const [submitted, setSubmitted] = useState(false)
-  const [cardTitle, setCardTitle] = useState('')
-  const [cardDescription, setCardDescription] = useState('')
-  const [cardDate, setCardDate] = useState('')
+  const [cardTitle, setCardTitle] = useState(task.titulo)
+  const [cardDescription, setCardDescription] = useState(task.description)
+  const [cardDate, setCardDate] = useState(task.data)
 
   const [valid, setValid] = useState(false)
 
-
-  const [isSwitchOn, setIsSwitchOn] = React.useState(false);
-
-  const onToggleSwitch = () => setIsSwitchOn(!isSwitchOn);
 
 
   const handleSubmit = event => {
@@ -44,6 +41,7 @@ export default function CreateTasks() {
   }
   const mountTask = () => {
     return {
+      id: task.id,
       description:cardDescription ,
       titulo: cardTitle,
       data: new Date(cardDate),
@@ -76,11 +74,15 @@ export default function CreateTasks() {
               onChangeText={cardDate => setCardDate(cardDate)}
             />
             <Text style={{ fontSize: 16, fontWeight: "bold" }}>Monitorar Clima</Text>
-            <Switch value={isSwitchOn} onValueChange={onToggleSwitch} />
-            {isSwitchOn && <WeatherBlockForm />}
-            <Button icon="plus-circle-outline" mode="contained" onPress={() => insertTask(id, mountTask()).then(()=>{  setAtualizar(true);  navigation.navigate('Home')})}>
-              Criar
+            <View   style={{padding:40, flexDirection: 'row'}}>
+            <Button  style={{marginRight:10,}} icon="plus-circle-outline" mode="contained" onPress={() => deleteTask(mountTask()).then(()=>{  setAtualizar(true); navigation.navigate('Home')})}>
+              Deletar
             </Button>
+            <Button icon="plus-circle-outline" mode="contained" onPress={() => updateTask(mountTask()).then(()=>{  setAtualizar(true); navigation.navigate('Home')})}>
+              Atualizar
+            </Button>
+            </View>
+            
         </View>
       </View>
     </Layout>

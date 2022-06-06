@@ -2,7 +2,8 @@ import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import Home from '../screens/Home';
-import CreateTasks from '../screens/CreateTasks';
+import CreateTasks from '../screens/CreateTasks'
+import UpdateTasks from '../screens/UpdateTasks'
 import Login from '../screens/Login'
 import Register from '../screens/Register'
 import { useUser } from '../context/userContext'
@@ -24,6 +25,14 @@ const Main = () => {
               header: () => null,
             }}
           />
+          <Stack.Screen
+            name="UpdateTasks"
+            component={UpdateTasks}
+            options={{
+              header: () => null,
+            }}
+          />
+          
           <Stack.Screen
             name="Home"
             component={Home}

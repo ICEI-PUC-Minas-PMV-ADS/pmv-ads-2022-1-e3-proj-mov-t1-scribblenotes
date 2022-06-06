@@ -13,10 +13,8 @@ export const Database = {
             tx.executeSql('CREATE table if not exists task (id INTEGER PRIMARY KEY AUTOINCREMENT, id_user integer,description text, titulo varchar(100), data timestamp,status integer, clima varchar(100),FOREIGN KEY(id_user) REFERENCES users(id))'); 
             tx.executeSql('insert into users(email,senha) values("Teste", "teste")'); 
             tx.executeSql('insert into task(id_user, description, titulo, data, status,clima) values(1,"Teste descricao", "tarefa 1", CURRENT_TIMESTAMP , 1, "sol")'); 
-
-        });
-        db.transaction( (tx) => {
             tx.executeSql('insert into task(id_user, description, titulo, data, status,clima) values(1,"Teste descricao", "tarefa 2", CURRENT_TIMESTAMP , 1, "sol")'); 
+
         });
         
         const ExecuteQuery = (sql, params = []) => {

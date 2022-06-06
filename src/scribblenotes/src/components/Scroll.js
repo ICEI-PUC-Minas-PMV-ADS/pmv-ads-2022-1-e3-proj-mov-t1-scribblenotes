@@ -9,17 +9,20 @@ export default function ScrollTask() {
     const { id } = useUser();
     const [data, setData] = useState([]);
     const [refreshing, setRefreshing] = useState(false);
+    const { atualizar, setAtualizar } = useUser();
 
     useEffect(() => {
-        if (data.length == 0) {
-            getUsersTasks(id).then(data => setData(data))
+
+        if(atualizar){
+            getUsersTasks(id,1).then(data => setData(data))
         }
-    }, [data])
+    }, [atualizar])
+    setAtualizar(false)
 
     const onRefresh = useCallback(async () => {
         setRefreshing(true);
         try {
-            setData(await getUsersTasks(id));
+            setData(await getUsersTasks(id,1));
             setRefreshing(false)
         } catch (error) {
             console.error(error);

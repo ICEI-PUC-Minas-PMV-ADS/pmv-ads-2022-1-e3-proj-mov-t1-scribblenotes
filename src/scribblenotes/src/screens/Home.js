@@ -3,27 +3,25 @@ import { BottomNavigation } from 'react-native-paper'
 
 import Tasks from '../screens/Tasks'
 import CreateTasks from '../screens/CreateTasks'
-import Contacts from '../screens/Contacts'
-import RegisterScreen from '../screens/Register'
-import Login from './Login'
+import Excluidos from './Excluidos'
+import { useUser } from '../context/userContext'
 
 const Home = () => {
   const [index, setIndex] = React.useState(0)
+  const { setAtualizar } = useUser();
 
   const [routes] = React.useState([
     { key: 'home', title: 'Tasks', icon: 'home-circle' },
     { key: 'create', title: 'Criar Tarefa', icon: 'plus-circle-outline' },
-    { key: 'contacts', title: 'Contato', icon: 'contacts' },
-    { key: 'register', title: 'Registro', icon: 'account-plus' }
+    { key: 'excluidos', title: 'Excluidos', icon: 'history' },
   ])
 
   const renderScene = BottomNavigation.SceneMap({
     home: Tasks,
     create: CreateTasks,
-    contacts: Contacts,
-    register: RegisterScreen,
+    excluidos: Excluidos,
   })
-
+  setAtualizar(true)
   return (
     <BottomNavigation
       navigationState={{ index, routes }}

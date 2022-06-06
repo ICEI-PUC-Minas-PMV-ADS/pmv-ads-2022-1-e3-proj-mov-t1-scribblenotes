@@ -1,18 +1,21 @@
-import React, { createContext, useState, useContext } from 'react';
+import React, { createContext, useState, useContext, useEffect } from 'react';
 
 export const UserContext = createContext();
 
 export default function UserProvider({ children }) {
   const [id, setId] = useState();
-  const [email, setEmail] = useState();
+  const [task, setTask] = useState();
+  const [atualizar, setAtualizar] = useState(true);
 
   return (
     <UserContext.Provider
       value={{
         id,
         setId,
-        email,
-        setEmail 
+        task,
+        setTask,
+        atualizar,
+        setAtualizar
       }}>
       {children}
     </UserContext.Provider>
@@ -21,6 +24,6 @@ export default function UserProvider({ children }) {
 
 export function useUser() {
   const context = useContext(UserContext);
-  const { id, setId, email, setEmail } = context;
-  return { id, setId, email, setEmail };
+  const { id, setId, task, setTask, atualizar, setAtualizar } = context;
+  return { id, setId, task, setTask, atualizar, setAtualizar };
 }

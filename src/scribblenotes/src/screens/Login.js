@@ -14,7 +14,7 @@ export default function Login({ Navigation }) {
   const { setId} = useUser();
 
 
-  const loginFirebase = async() => {
+  const login = async() => {
     getUser(email, password).then(data => {
       setId(data.id)
       navigation.navigate('Home')
@@ -70,14 +70,14 @@ export default function Login({ Navigation }) {
         <TouchableOpacity
           disabled={true}
           style={styles.buttonLogin}
-          onPress={loginFirebase}
+          onPress={login}
         >
           <Text style={styles.textButtonLogin}>Entrar</Text>
         </TouchableOpacity>
         :
         <TouchableOpacity
           style={styles.buttonLogin}
-          onPress={loginFirebase}
+          onPress={login}
 
         >
           <Text style={styles.textButtonLogin}>Entrar</Text>

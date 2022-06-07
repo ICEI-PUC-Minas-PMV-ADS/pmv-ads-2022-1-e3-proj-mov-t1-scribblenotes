@@ -4,7 +4,7 @@ import AppLoading from 'expo-app-loading';
 import Layout from '../components/layout/Layout';
 import { Text, TextInput, Switch, Button } from 'react-native-paper';
 import React, { useState } from 'react';
-import WeatherBlockForm from '../components/weatherBlockForm';
+import WeatherBlockForm from '../components/WeatherBlockForm';
 import firebase from '../config/firebaseConfig'
 import { useNavigation } from '@react-navigation/native';
 
@@ -48,8 +48,8 @@ const CreateTasks = () => {
 
   return (
     <Layout subtitle='Criar Tarefa' goBack={() => navigation.navigate('Tasks')}>
-      <View className="form-container">
-        <form className="add-task-form" onSubmit={handleSubmit}>
+      <View className="form-container" style={{ marginTop: 24 }}>
+        <View className="add-task-form">
           <TextInput
             style={styles.picker}
             label="Titulo"
@@ -69,13 +69,15 @@ const CreateTasks = () => {
             value={cardDate}
             onChangeText={cardDate => setCardDate(cardDate)}
           />
-          <Text style={{ fontSize: 16, fontWeight: 600 }}>Monitorar Clima</Text>
+          <Text style={{ fontSize: 16, fontWeight: '700' }}>Monitorar Clima</Text>
           <Switch value={isSwitchOn} onValueChange={onToggleSwitch} />
           {isSwitchOn && <WeatherBlockForm />}
-          <Button icon="plus-circle-outline" mode="contained" onPress={() => console.log('Criar')}>
-            Criar
-          </Button>
-        </form>
+          <View style={{ marginTop: 24 }}>
+            <Button icon="plus-circle-outline" mode="contained" onPress={() => handleSubmit}>
+              Criar
+            </Button>
+          </View>
+        </View>
       </View>
     </Layout>
   );
